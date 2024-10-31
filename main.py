@@ -2,24 +2,27 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-from selenium.common.exceptions import NoSuchElementException, NoSuchFrameException
+from selenium.common.exceptions import NoSuchElementException, NoSuchFrameException, TimeoutException
+from selenium.webdriver.chrome.service import Service as ChromeService
+from selenium.webdriver import DesiredCapabilities
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 import time
+
+caps = DesiredCapabilities().CHROME
+caps["pageLoadStrategy"] = "eager"
+
+
 options = webdriver.ChromeOptions()
+
+options.page_load_strategy = 'eager'
 options.add_experimental_option("detach", True)  # Option to keep Chrome open
 
-# # # Specify path to Chrome User Data Folder
-# options.add_argument(r'--user-data-dir=C:\Users\Craig\AppData\Local\Google\Chrome\User Data')
-#
-# options.add_argument('--profile-directory=SeleniumProfile')
-
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome(options = options)
 #
 driver.get("https://www.stuff.co.nz/quizzes/350407318/stuff-quiz-morning-trivia-challenge-october-29-2024")
 
-time.sleep(3)
-# driver.switch_to.frame(2)
-# iframe = WebDriverWait(driver,2).until(EC.presence_of_element_located((By.CSS_SELECTOR, "body > div.login-modal > iframe")))
-# iframe = driver.find_element(By.CSS_SELECTOR, "iframe")
+# time.sleep(3)
 
     # switch to selected iframe
 # driver.switch_to.frame(3)
@@ -36,19 +39,7 @@ time.sleep(3)
 # password.send_keys("gumoh1977", Keys.ENTER)
 #
 # driver.get("https://www.linkedin.com/jobs/search/?currentJobId=4046079284&keywords=python%20developer&origin=JOB_SEARCH_PAGE_JOB_FILTER&refresh=true")
-# #main > div > div.scaffold-layout__list-detail-inner.scaffold-layout__list-detail-inner--grow > div.scaffold-layout__list
-# #main > div > div.scaffold-layout__list-detail-inner.scaffold-layout__list-detail-inner--grow > div.scaffold-layout__list > div > ul
-# time.sleep(4)
-# jobs = driver.find_elements(By.CSS_SELECTOR, value = ".job-card-container--clickable")
-# # <h1 class="t-24 t-bold inline"><a href="/jobs/view/4046079284/?alternateChannel=search&amp;refId=HfM4ycjCmtbVSxZ0LAROPA%3D%3D&amp;trackingId=uFCmfIiuvi2Xer6mob4xGg%3D%3D&amp;trk=d_flagship3_job_details" id="ember1545" class="ember-view">Salesforce Developer</a></h1>
-# print(len(jobs))
-# for idx, job in enumerate(jobs):
-#     print("Opening Job")
-#     job.click()
-#     time.sleep(2)
-#
-#     title = driver.find_element(By.CSS_SELECTOR, value = "h1 a")
-#     print(f"{idx}   {title.text}   ")
+
 # elements = driver.find_elements(By.CSS_SELECTOR, ".event-widget .shrubbery ul li ")
 # # print(element.text)
 # events = {}
@@ -67,9 +58,10 @@ time.sleep(3)
 # driver.quit()
 
 # Wait for the page to load
-# time.sleep(3)
+time.sleep(3)
 
 # Get all iframe elements on the page
+
 iframes = driver.find_elements(By.TAG_NAME, 'iframe')
 
 button_clicked = False
@@ -99,3 +91,83 @@ for index, iframe in enumerate(iframes):
 if not button_clicked:
     driver.switch_to.default_content()
     print(f"Button not found in any iframe")
+time.sleep(3)
+
+driver.switch_to.default_content()
+
+
+email_address = driver.find_element(By.ID, value = "signInName")
+email_address.send_keys("cbriggsnz1977@gmail.com", Keys.ENTER)
+
+password = driver.find_element(By.ID, value = "password")
+password.send_keys("?NtLdRR8NQQff$3g", Keys.ENTER)
+
+time.sleep(6)
+
+# print(driver.page_source)
+def wait_for_iframe_and_switch(iframe_locator, timeout=20):
+    try:
+        # Wait for the iframe to be present
+        iframe = WebDriverWait(driver, timeout).until(EC.presence_of_element_located((By.ID, iframe_locator)))
+
+        # Switch to the iframe
+        return iframe
+
+    except TimeoutException:
+        print("Iframe not found within the given time.")
+        return None
+
+def wait_for_load(condition, element):
+    elem = None
+    try:
+        elem = WebDriverWait(driver, 10).until(
+            EC.frame_to_be_available_and_switch_to_it((condition, element)) #This is a dummy element
+        )
+
+    finally:
+        return elem
+
+# iframe_locator = (By.ID, 'Morning October 29, 2024')
+#
+# # Wait for the iframe to load and switch to it
+# iframe = wait_for_iframe_and_switch((By.ID, 'Morning October 29, 2024'))
+#
+# if iframe:
+#     # Now you are within the iframe and can interact with elements inside it
+#     # Perform your actions here
+#
+#     print("Locatied")
+# else:
+#     print("Failed to locate and switch to iframe.")
+
+    # driver.quit()
+# quiz = wait_for(By.CSS_SELECTOR, ".content-slot iframe")#
+quiz = driver.find_element(By.CSS_SELECTOR, value = ".content-slot iframe")
+print(quiz.text)
+print("\n\n\n\n")
+
+# Dictionary to store questions and answers
+qa_dict = {}
+
+sections = driver.find_elements(By.CSS_SELECTOR, "h2")
+# print(section.text)
+# Locate all sections with `data-block="SingleChoice"`
+# sections = driver.find_elements(By.TAG_NAME, 'h2')
+#
+# section = driver.find_element(By.CSS_SELECTOR, "section[data-block='SingleChoice']")
+# print(section.text)
+for idx, section in enumerate(sections):
+#     # Extract the question text from the <h2> or <h3> tag
+    print(f"{idx} - {section.text}")
+    # question_element = section.find_element(By.XPATH, './h2 | ./h3')
+    # question = question_element.text
+    #
+    # # Extract answers from <li> tags within the <ul> tag
+    # answer_elements = section.find_elements(By.XPATH, './ul/li')
+    # answers = [answer.text for answer in answer_elements]
+    #
+    # # Add question and answers to the dictionary
+    # qa_dict[question] = answers
+
+# Print the resulting dictionary
+# print(qa_dict)
