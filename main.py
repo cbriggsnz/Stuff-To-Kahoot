@@ -7,6 +7,7 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver import DesiredCapabilities
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import re
 import time
 
 caps = DesiredCapabilities().CHROME
@@ -142,24 +143,51 @@ def wait_for_load(condition, element):
 
     # driver.quit()
 # quiz = wait_for(By.CSS_SELECTOR, ".content-slot iframe")#
-quiz = driver.find_element(By.CSS_SELECTOR, value = ".content-slot iframe")
-print(quiz.text)
-print("\n\n\n\n")
+html_text = driver.find_element(By.CSS_SELECTOR, value = ".content-slot iframe").text
+# print(html_text.text)
+print(type(html_text))
+# print("\n\n\n\n")
 
 # Dictionary to store questions and answers
-qa_dict = {}
+quiz_dict = {}
+quiz_list = []
+# Regular expression to capture each question and its answers
+question_pattern = r"<h[23]>(.*?)</h[23]>"
+answers_pattern = r"<li>(.*?)</li>"
 
-sections = driver.find_elements(By.CSS_SELECTOR, "h2")
+# Find all sections and iterate over them
+for section in re.findall(r"<section.*?</section>", html_text, re.DOTALL):
+    # Extract the question
+    question_match = re.search(question_pattern, section)
+    if question_match:
+        question_text = question_match.group(1)
+
+        # Extract all answers for this question
+        answers = re.findall(answers_pattern, section)
+
+        # Create dictionary for the current question
+        question_dict = {"Question": question_text}
+
+        # Assign letters (A, B, C...) to each answer
+        for idx, answer in enumerate(answers):
+            question_dict[f"Answer {chr(65 + idx)}"] = answer  # chr(65) is 'A', chr(66) is 'B', etc.
+
+        # Append the question dictionary to the list
+        quiz_list.append(question_dict)
+
+# Print the result
+print(quiz_list)
+# section = driver.find_element(By.TAG_NAME, "li")
 # print(section.text)
 # Locate all sections with `data-block="SingleChoice"`
 # sections = driver.find_elements(By.TAG_NAME, 'h2')
 #
 # section = driver.find_element(By.CSS_SELECTOR, "section[data-block='SingleChoice']")
 # print(section.text)
-for idx, section in enumerate(sections):
-#     # Extract the question text from the <h2> or <h3> tag
-    print(f"{idx} - {section.text}")
-    # question_element = section.find_element(By.XPATH, './h2 | ./h3')
+# for idx, section in enumerate(sections):
+# #     # Extract the question text from the <h2> or <h3> tag
+#     print(f"{idx} - {section.text}")
+#     # question_element = section.find_element(By.XPATH, './h2 | ./h3')
     # question = question_element.text
     #
     # # Extract answers from <li> tags within the <ul> tag
