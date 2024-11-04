@@ -2,22 +2,19 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-from selenium.common.exceptions import NoSuchElementException, NoSuchFrameException, TimeoutException, StaleElementReferenceException
+from selenium.common.exceptions import NoSuchElementException, NoSuchFrameException, TimeoutException, StaleElementReferenceException, ElementNotInteractableException
 from selenium.webdriver import DesiredCapabilities
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import time
 
-caps = DesiredCapabilities().CHROME
-caps["pageLoadStrategy"] = "eager"
+# caps = DesiredCapabilities().CHROME
+# caps["pageLoadStrategy"] = "eager"
 
 options = webdriver.ChromeOptions()
-
 options.page_load_strategy = 'eager'
 options.add_experimental_option("detach", True)  # Option to keep Chrome open
 
 driver = webdriver.Chrome(options = options)
-#
 driver.get("https://www.stuff.co.nz/quizzes/350407318/stuff-quiz-morning-trivia-challenge-october-29-2024")
 
 def find_iframe_by_class(class_name: str, retries: int = 3):
@@ -30,7 +27,6 @@ def find_iframe_by_class(class_name: str, retries: int = 3):
 
     while overall_retries > 0:
         print(f"Attempt {retries - overall_retries + 1} to locate and click the button.")
-
         # Refresh the list of iframes each retry
         iframes = driver.find_elements(By.TAG_NAME, 'iframe')
         print(f"Found {len(iframes)} iframes on this retry.")
@@ -43,22 +39,18 @@ def find_iframe_by_class(class_name: str, retries: int = 3):
 
                 # Try to locate the button with the specified class
                 button = driver.find_element(By.CLASS_NAME, class_name)
-
                 # Click the button if found
                 button.click()
                 print(f"Clicked button in iframe {index + 1}")
                 button_clicked = True
                 break  # Exit the loop if the button is clicked successfully
 
-            except NoSuchElementException:
+            except (NoSuchElementException, TimeoutException):
                 print(f"Button not found in iframe {index + 1}, moving to the next iframe.")
                 driver.switch_to.default_content()  # Switch back to main content
 
-            except NoSuchFrameException:
-                print(f"Could not switch to iframe {index + 1}, it may not be accessible.")
-
-            except StaleElementReferenceException:
-                print(f"Iframe {index + 1} became stale, moving to the next iframe.")
+            except (NoSuchFrameException, ElementNotInteractableException, StaleElementReferenceException):
+                print(f"Cannot interact with iframe {index + 1}.")
                 driver.switch_to.default_content()
 
         # Exit the retry loop if the button was clicked
@@ -73,6 +65,7 @@ def find_iframe_by_class(class_name: str, retries: int = 3):
     # Final check to confirm if the button was clicked
     if not button_clicked:
         print("Button not found in any iframe after all retries.")
+wait = WebDriverWait(driver, 10)
 
 find_iframe_by_class("stuff-button")
 
@@ -87,20 +80,11 @@ email_address.send_keys("cbriggsnz1977@gmail.com", Keys.ENTER)
 password = driver.find_element(By.ID, value = "password")
 password.send_keys("?NtLdRR8NQQff$3g", Keys.ENTER)
 
-print(driver.title)
-# time.sleep(6)
-
-
 WebDriverWait(driver, 10).until(EC.title_contains("Stuff quiz"))
-print(driver.title)
 
-print("\n\n\n\n  Finding block nav")
 find_iframe_by_class("block-nav", retries=16)
 
 quiz_list = []
-
-wait = WebDriverWait(driver, 10)
-
 
 # Define a helper function to handle clicking with retry logic
 def click_with_retry(driver, locator, retries=3):
@@ -110,7 +94,7 @@ def click_with_retry(driver, locator, retries=3):
             button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable(locator))
             button.click()
             return True
-        except StaleElementReferenceException:
+        except (StaleElementReferenceException, ElementNotInteractableException):
             retries -= 1
             if retries == 0:
                 print(f"Failed to locate and click the element {locator} after multiple retries.")
