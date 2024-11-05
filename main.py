@@ -139,3 +139,4 @@ bot = QuizBot(
 
 quiz_data = bot.run_quiz()
 print(quiz_data)
+print(len(quiz_data))
