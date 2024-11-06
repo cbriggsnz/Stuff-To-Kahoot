@@ -1,11 +1,12 @@
 
-# from selenium import webdriver
-# from selenium.webdriver.common.by import By
-# from selenium.webdriver.common.keys import Keys
-# from selenium.common.exceptions import NoSuchElementException, NoSuchFrameException, TimeoutException, StaleElementReferenceException, ElementNotInteractableException, ElementClickInterceptedException
-# from selenium.webdriver.support.ui import WebDriverWait
-# from selenium.webdriver.support import expected_conditions as EC
-#
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.common.exceptions import NoSuchElementException, NoSuchFrameException, TimeoutException, StaleElementReferenceException, ElementNotInteractableException, ElementClickInterceptedException
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import time
+
 # options = webdriver.ChromeOptions()
 # options.page_load_strategy = 'eager'
 # options.add_experimental_option("detach", True)  # Option to keep Chrome open
@@ -128,15 +129,80 @@
 #
 # print(quiz_list)
 
-from QuizBot import QuizBot
+# from QuizBot import QuizBot
+#
+# bot = QuizBot(
+#     url="https://www.stuff.co.nz/quizzes/350407318/stuff-quiz-morning-trivia-challenge-october-29-2024",
+#     username="cbriggsnz1977@gmail.com",
+#     password="?NtLdRR8NQQff$3g",
+#     debug=False
+# )
+# # bot.mainLoop()
+#
+# quiz_data = bot.run_quiz()
+# print(quiz_data)
+# print(len(quiz_data))
+options = webdriver.ChromeOptions()
+options.page_load_strategy = 'eager'
+options.add_experimental_option("detach", True)  # Option to keep Chrome open
 
-bot = QuizBot(
-    url="https://www.stuff.co.nz/quizzes/350407318/stuff-quiz-morning-trivia-challenge-october-29-2024",
-    username="cbriggsnz1977@gmail.com",
-    password="?NtLdRR8NQQff$3g"
-)
-# bot.mainLoop()
+kahoot_username = "mrbriggsteach@gmail.com"
+kahoot_password = "AiyfqEPC43sNr$@o"
 
-quiz_data = bot.run_quiz()
-print(quiz_data)
-print(len(quiz_data))
+driver = webdriver.Chrome(options = options)
+driver.get("https://create.kahoot.it/auth/login")
+
+time.sleep(2)
+
+button = driver.find_element(By.XPATH, '//button[text()="Accept all cookies"]')
+button.click()
+
+email_field = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, "username")))
+email_field.send_keys(kahoot_username, Keys.ENTER)
+
+password_field = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, "password")))
+password_field.send_keys(kahoot_password, Keys.ENTER)
+
+print(driver.title)
+# time.sleep(3)
+WebDriverWait(driver, 10).until(EC.title_is("Kahoot!"))
+print(driver.title)
+
+driver.get("https://create.kahoot.it/creator")
+
+try:
+    button = WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.XPATH, '//div[@data-cta="blank"]'))
+    )
+    # Click the button
+    button.click()
+    print("Clicked on the 'Blank canvas' button successfully.")
+except Exception as e:
+    print("The 'Blank canvas' button did not appear or was not clickable:", e)
+
+
+
+try:
+    p_element = WebDriverWait(driver, 10).until(
+        EC.visibility_of_element_located((By.CSS_SELECTOR, "p[data-placeholder='Start typing your question']"))
+    )
+    p_element.send_keys("This is a test", Keys.ENTER)
+    # Add text to the <p> element using JavaScript
+    print("Text added to the <p> element successfully.")
+except Exception as e:
+    print("The <p> element with data-placeholder='Start typing your question' did not load:", e)
+
+def enter_answers(answer_id, answer):
+    try:
+        div_element = WebDriverWait(driver, 10).until(
+            EC.visibility_of_element_located((By.ID, answer_id))
+        )
+
+        div_element.send_keys(answer)
+        # Add text to the contenteditable <div> using JavaScript
+        print("Text added to the <div> element successfully.")
+    except Exception as e:
+        print("The <div> element with id='question-choice-0' did not load or was not visible:", e)
+
+for i in range(4):
+    enter_answers(f"question-choice-{i}", f"Answer {i}")
