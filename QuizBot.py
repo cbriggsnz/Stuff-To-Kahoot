@@ -83,6 +83,23 @@ class QuizBot:
         password_field = self.wait.until(EC.element_to_be_clickable((By.ID, "password")))
         password_field.send_keys(self.password, Keys.ENTER)
 
+    def get_quiz_title(self):
+        quiz_title = ""
+        try:
+            # Wait for the <h1> element with the quiz title to be present
+            h1_element = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, ".stuff-box.stuff-article-header h1"))
+            )
+            # Get the text of the <h1> element
+            # quiz_title = h1_element.text
+            # print(f"Quiz title: {quiz_title}")
+            quiz_title = h1_element.text
+
+        except Exception as e:
+            print("Could not find the quiz title:", e)
+
+        return quiz_title
+
     def gather_quiz_data(self):
         """Collect quiz data by interacting with each question."""
         quiz_list = []
@@ -99,16 +116,20 @@ class QuizBot:
             # Gather answers if selection was successful
             buttons = self.wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".choice-title")))
             question_dict = {}
-            for idx, b in enumerate(buttons):
-                index = idx + 1
+            answer_list = []
+            for index, b in enumerate(buttons):
                 correct = b.find_elements(By.CSS_SELECTOR, ".correct")
-                question_dict[f"Answer {index}"] = b.text
+                # question_dict[f"Answer {index}"] = b.text
+                answer_list.append(b.text)
                 if correct:
                     question_dict["Correct"] = index
-
+            question_dict["Answers"] = answer_list
             # Retrieve question text
             question_text = self.wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, ".title"))).text
             question_dict["Question"] = question_text
+
+
+
             self.debug_print(f"Collected question data: {question_dict}")
 
             # Add question dictionary to quiz_list
@@ -157,8 +178,12 @@ class QuizBot:
         self.driver.switch_to.default_content()
         self.login()
         WebDriverWait(self.driver, 10).until(EC.title_contains("Stuff quiz"))
+        quiz_title = self.get_quiz_title()
         self.find_iframe_by_class("block-nav", retries=16)
-        return self.gather_quiz_data()
+        quiz_data = self.gather_quiz_data()
+        quiz = {"Title" : quiz_title, "Quiz_Data" : quiz_data}
+        return quiz
+
 
     def close(self):
         """Close the WebDriver."""

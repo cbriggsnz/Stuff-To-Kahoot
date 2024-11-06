@@ -129,21 +129,25 @@ import time
 #
 # print(quiz_list)
 
-# from QuizBot import QuizBot
-#
-# bot = QuizBot(
-#     url="https://www.stuff.co.nz/quizzes/350407318/stuff-quiz-morning-trivia-challenge-october-29-2024",
-#     username="cbriggsnz1977@gmail.com",
-#     password="?NtLdRR8NQQff$3g",
-#     debug=False
-# )
-# # bot.mainLoop()
-#
-# quiz_data = bot.run_quiz()
-# print(quiz_data)
+from QuizBot import QuizBot
+
+bot = QuizBot(
+    url="https://www.stuff.co.nz/quizzes/350407318/stuff-quiz-morning-trivia-challenge-october-29-2024",
+    username="cbriggsnz1977@gmail.com",
+    password="?NtLdRR8NQQff$3g",
+    debug=False
+)
+# bot.mainLoop()
+
+quiz = bot.run_quiz()
+print(quiz)
 # print(len(quiz_data))
+quiz_data = quiz["Quiz_Data"]
+# quiz_data = [{'Correct': 2, 'Answers': ['Hack shack', 'Wreck deck', 'Chop shop', 'Whip strip'], 'Question': 'A place where stolen vehicles are dismantled so that the parts can be sold or used to repair other stolen vehicles is called a ...'}, {'Correct': 2, 'Answers': ['Dwight D Eisenhower', 'Lyndon B Johnson', 'Richard Nixon', 'Gerald Ford'], 'Question': 'Which US president was at the centre of the Watergate scandal?'}, {'Correct': 2, 'Answers': ['Keep', 'Portcullis', 'Embrasure', 'Rampart'], 'Question': 'In a medieval castle, what name was given to an opening in the wall from which cannons were fired?'}, {'Correct': 0, 'Answers': ['Eroica', 'Pastorale'], 'Question': "What is the alternate name for Beethoven's Third Symphony?"}, {'Correct': 0, 'Answers': ['Ear wax', 'Stomach acid', 'Tears', 'Urine'], 'Question': 'Cerumen is more commonly known as ...'}, {'Correct': 0, 'Answers': ['Eritrea', 'Somalia', 'Djibouti', 'South Sudan'], 'Question': 'Which country broke away from Ethiopia in 1991?'}, {'Correct': 1, 'Answers': ['Crustaceans', 'Echinoderms', 'Fissipeds', 'Pinnipeds'], 'Question': 'Sea urchins belong to which marine animal group?'}, {'Correct': 2, 'Answers': ['A police informant', 'A small stove', 'A bar with an honour system', 'A piece of playground equipment'], 'Question': 'What is an "Honest John"?'}, {'Correct': 1, 'Answers': ['Tokyo', 'Rome', 'Paris', 'London'], 'Question': 'According to the saying, which city wasn\'t "built in a day"?'}, {'Correct': 2, 'Answers': ['Potatoes', 'Cucumber', 'Lettuce', 'Tomatoes'], 'Question': 'What produce might be butterhead, iceberg, or romaine?'}, {'Correct': 1, 'Answers': ['Piano Man', 'Uptown Girl', "We Didn't Start the Fire", 'Always a Woman'], 'Question': 'What Billy Joel song was inspired by a night out with Christie Brinkley, Whitney Houston and Elle Macpherson?'}, {'Correct': 2, 'Answers': ['A duck', 'A goat', 'A cow', 'A cat'], 'Question': 'According to legend, what kind of animal caused the great Chicago fire of 1871?'}, {'Correct': 1, 'Answers': ['Six', 'Five'], 'Question': 'How many points are on a single star on the American flag?'}, {'Correct': 0, 'Answers': ['Toe', 'Tongue', 'Throat', 'Tonsils'], 'Question': 'Bunions affect which body part?'}, {'Correct': 2, 'Answers': ['Cousins', 'Twins', 'Married', 'Brother and sister-in-law'], 'Question': 'Actors Nick Offerman and Megan Mullally are ...'}]
+
 options = webdriver.ChromeOptions()
 options.page_load_strategy = 'eager'
+options.add_argument("--start-maximized")
 options.add_experimental_option("detach", True)  # Option to keep Chrome open
 
 kahoot_username = "mrbriggsteach@gmail.com"
@@ -152,57 +156,86 @@ kahoot_password = "AiyfqEPC43sNr$@o"
 driver = webdriver.Chrome(options = options)
 driver.get("https://create.kahoot.it/auth/login")
 
-time.sleep(2)
+# Function to wait for an element and click it
+def wait_and_click(locator_type, locator_value, timeout=10, retries=3):
+    for attempt in range(retries):
+        try:
+            # Locate the element and wait until it's clickable
+            element = WebDriverWait(driver, timeout).until(
+                EC.element_to_be_clickable((locator_type, locator_value))
+            )
+            element.click()
+            print(f"Clicked element with {locator_type}='{locator_value}' successfully.")
+            return
+        except ElementClickInterceptedException:
+            print(f"Click intercepted, retrying... (Attempt {attempt + 1})")
+            # Use WebDriverWait to wait for the element to be clickable again immediately
+            WebDriverWait(driver, timeout).until(
+                EC.element_to_be_clickable((locator_type, locator_value))
+            )
+        except StaleElementReferenceException:
+            print(f"Stale element reference, re-locating element... (Attempt {attempt + 1})")
+            # Attempt to re-locate the element by waiting for it to be present
+            WebDriverWait(driver, timeout).until(
+                EC.presence_of_element_located((locator_type, locator_value))
+            )
+    # If it fails after retries, log an error
+    print(f"Element with {locator_type}='{locator_value}' was not found or clickable after {retries} attempts.")
 
-button = driver.find_element(By.XPATH, '//button[text()="Accept all cookies"]')
-button.click()
+# Function to wait for an element and send keys to it
+def wait_and_send_keys(locator_type, locator_value, text, timeout=10):
+    try:
+        element = WebDriverWait(driver, timeout).until(
+            EC.visibility_of_element_located((locator_type, locator_value))
+        )
+        element.send_keys(text)
+        print(f"Text '{text}' sent to element with {locator_type}='{locator_value}' successfully.")
+    except Exception as e:
+        print(f"Failed to send text to element with {locator_type}='{locator_value}': {e}")
 
-email_field = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, "username")))
-email_field.send_keys(kahoot_username, Keys.ENTER)
+# Function to check if an element is present and optionally click based on attribute value
+# def check_and_click_if_expanded(locator_type, locator_value, attribute="aria-expanded", expected_value="true"):
+#     try:
+#         element = driver.find_element(locator_type, locator_value)
+#         if element.get_attribute(attribute) == expected_value:
+#             element.click()
+#             print(f"Clicked the element with {locator_type}='{locator_value}' as it was expanded.")
+#         else:
+#             print(f"Element with {locator_type}='{locator_value}' is not expanded; no action taken.")
+#     except NoSuchElementException:
+#         print(f"Element with {locator_type}='{locator_value}' is not present on the page.")
+#     except Exception as e:
+#         print(f"An error occurred while checking and clicking element with {locator_type}='{locator_value}': {e}")
 
-password_field = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, "password")))
-password_field.send_keys(kahoot_password, Keys.ENTER)
 
-print(driver.title)
-# time.sleep(3)
+wait_and_click(By.XPATH, '//button[text()="Accept all cookies"]')
+
+wait_and_send_keys(By.ID, "username", kahoot_username + Keys.ENTER)
+
+wait_and_send_keys(By.ID, "password", kahoot_password + Keys.ENTER)
+
 WebDriverWait(driver, 10).until(EC.title_is("Kahoot!"))
-print(driver.title)
 
 driver.get("https://create.kahoot.it/creator")
 
-try:
-    button = WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.XPATH, '//div[@data-cta="blank"]'))
-    )
-    # Click the button
-    button.click()
-    print("Clicked on the 'Blank canvas' button successfully.")
-except Exception as e:
-    print("The 'Blank canvas' button did not appear or was not clickable:", e)
+wait_and_click(By.XPATH, '//div[@data-cta="blank"]')
 
+# Send text to <p> element
+for idx, question in enumerate(quiz_data):
+    print(question)
+    wait_and_send_keys(By.CSS_SELECTOR, "p[data-placeholder='Start typing your question']", question["Question"] + Keys.ENTER)
 
+    # Enter answers into multiple fields
+    answers = question["Answers"]
+    for i in range(len(answers)):
+        wait_and_send_keys(By.ID, f"question-choice-{i}", answers[i])
 
-try:
-    p_element = WebDriverWait(driver, 10).until(
-        EC.visibility_of_element_located((By.CSS_SELECTOR, "p[data-placeholder='Start typing your question']"))
-    )
-    p_element.send_keys("This is a test", Keys.ENTER)
-    # Add text to the <p> element using JavaScript
-    print("Text added to the <p> element successfully.")
-except Exception as e:
-    print("The <p> element with data-placeholder='Start typing your question' did not load:", e)
+    # Click "Toggle answer # correct" button with retries for intercepted clicks
+    wait_and_click(By.XPATH, f'//button[@aria-label="Toggle answer {question["Correct"] + 1} correct."]', retries=3)
 
-def enter_answers(answer_id, answer):
-    try:
-        div_element = WebDriverWait(driver, 10).until(
-            EC.visibility_of_element_located((By.ID, answer_id))
-        )
+    # Click "Add question" button
+    if idx < 14:
+        wait_and_click(By.CSS_SELECTOR, 'button[data-functional-selector="add-question-button"]')
 
-        div_element.send_keys(answer)
-        # Add text to the contenteditable <div> using JavaScript
-        print("Text added to the <div> element successfully.")
-    except Exception as e:
-        print("The <div> element with id='question-choice-0' did not load or was not visible:", e)
-
-for i in range(4):
-    enter_answers(f"question-choice-{i}", f"Answer {i}")
+        # Click "Add a new Quiz type question" button
+        wait_and_click(By.CSS_SELECTOR, 'button[data-functional-selector="create-button__quiz"]')
