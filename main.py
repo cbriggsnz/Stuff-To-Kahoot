@@ -196,21 +196,6 @@ def wait_and_send_keys(locator_type, locator_value, text, timeout=10):
     except Exception as e:
         print(f"Failed to send text to element with {locator_type}='{locator_value}': {e}")
 
-# Function to check if an element is present and optionally click based on attribute value
-# def check_and_click_if_expanded(locator_type, locator_value, attribute="aria-expanded", expected_value="true"):
-#     try:
-#         element = driver.find_element(locator_type, locator_value)
-#         if element.get_attribute(attribute) == expected_value:
-#             element.click()
-#             print(f"Clicked the element with {locator_type}='{locator_value}' as it was expanded.")
-#         else:
-#             print(f"Element with {locator_type}='{locator_value}' is not expanded; no action taken.")
-#     except NoSuchElementException:
-#         print(f"Element with {locator_type}='{locator_value}' is not present on the page.")
-#     except Exception as e:
-#         print(f"An error occurred while checking and clicking element with {locator_type}='{locator_value}': {e}")
-
-
 wait_and_click(By.XPATH, '//button[text()="Accept all cookies"]')
 
 wait_and_send_keys(By.ID, "username", kahoot_username + Keys.ENTER)
