@@ -9,19 +9,13 @@ from selenium.common.exceptions import (
 
 
 class KahootBot:
-    def __init__(self, username, password, quiz_data, debug=False):
+    def __init__(self, driver, username, password, title, quiz_data, debug=False):
+        self.driver = driver  # Use the provided driver
         self.username = username
         self.password = password
+        self.title = title
         self.quiz_data = quiz_data
         self.debug = debug
-
-        # Initialize WebDriver with Chrome options
-        options = webdriver.ChromeOptions()
-        options.page_load_strategy = 'eager'
-        options.add_argument("--start-maximized")
-        options.add_experimental_option("detach", True)
-
-        self.driver = webdriver.Chrome(options=options)
         self.wait = WebDriverWait(self.driver, 10)
 
     def debug_print(self, message):
@@ -89,10 +83,10 @@ class KahootBot:
                 self.wait_and_click(By.CSS_SELECTOR, 'button[data-functional-selector="add-question-button"]')
                 self.wait_and_click(By.CSS_SELECTOR, 'button[data-functional-selector="create-button__quiz"]')
 
-    def save_quiz(self, quiz_title):
+    def save_quiz(self):
         """Saves the quiz with the provided title."""
         self.wait_and_click(By.CSS_SELECTOR, 'button[data-functional-selector="top-bar__save-button"]')
-        self.wait_and_send_keys(By.ID, "kahoot-title", quiz_title + Keys.ENTER)
+        self.wait_and_send_keys(By.ID, "kahoot-title", self.title + Keys.ENTER)
         self.wait_and_click(By.CSS_SELECTOR, 'button[data-functional-selector="dialog-add-title__continue"]')
         self.debug_print("Quiz saved successfully.")
 
@@ -100,7 +94,7 @@ class KahootBot:
         """Executes the full sequence: login, create quiz, and save."""
         self.login()
         self.create_quiz()
-        self.save_quiz("My Kahoot Quiz")  # Replace with desired title
+        self.save_quiz()  # Replace with desired title
 
     def close(self):
         """Closes the WebDriver."""

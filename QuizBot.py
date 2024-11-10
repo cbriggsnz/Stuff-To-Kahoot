@@ -9,18 +9,12 @@ from selenium.common.exceptions import (
 )
 
 class QuizBot:
-    def __init__(self, url, username, password, debug = False):
+    def __init__(self, driver, url, username, password, debug=False):
+        self.driver = driver  # Use the provided driver
         self.url = url
         self.username = username
         self.password = password
-        self.debug = debug  # Set the debug flag
-
-        # Initialize WebDriver and set page load strategy
-        options = webdriver.ChromeOptions()
-        options.page_load_strategy = 'eager'
-        options.add_experimental_option("detach", True)
-
-        self.driver = webdriver.Chrome(options=options)
+        self.debug = debug
         self.wait = WebDriverWait(self.driver, 10)
 
     def debug_print(self, message):
