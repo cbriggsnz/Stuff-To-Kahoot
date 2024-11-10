@@ -7,6 +7,7 @@ from selenium.common.exceptions import (
     NoSuchElementException, NoSuchFrameException, TimeoutException,
     StaleElementReferenceException, ElementNotInteractableException
 )
+from SeleniumHelpers import wait_and_click, wait_and_send_keys
 
 class QuizBot:
     def __init__(self, driver, url, username, password, debug=False):
@@ -71,11 +72,13 @@ class QuizBot:
 
     def login(self):
         """Logs in using provided credentials."""
-        email_field = self.wait.until(EC.element_to_be_clickable((By.ID, "signInName")))
-        email_field.send_keys(self.username, Keys.ENTER)
-
-        password_field = self.wait.until(EC.element_to_be_clickable((By.ID, "password")))
-        password_field.send_keys(self.password, Keys.ENTER)
+        wait_and_send_keys(self.driver, By.ID, "signInName", self.username + Keys.ENTER, debug=self.debug)
+        wait_and_send_keys(self.driver, By.ID, "password", self.password + Keys.ENTER, debug=self.debug)
+        # email_field = self.wait.until(EC.element_to_be_clickable((By.ID, "signInName")))
+        # email_field.send_keys(self.username, Keys.ENTER)
+        #
+        # password_field = self.wait.until(EC.element_to_be_clickable((By.ID, "password")))
+        # password_field.send_keys(self.password, Keys.ENTER)
 
     def get_quiz_title(self):
         quiz_title = ""
