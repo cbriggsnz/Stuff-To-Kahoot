@@ -1,0 +1,781 @@
+
+==================================================
+
+==================================================
+
+==================================================
+New logging session started: 2024-11-11 20:50:25
+==================================================
+ [2024-11-11 20:50:25,354] [MainThread] [main.py:18] [INFO    ] Info message
+ [2024-11-11 20:50:25,354] [MainThread] [main.py:19] [WARNING ] Warning message
+ [2024-11-11 20:50:25,354] [MainThread] [main.py:20] [ERROR   ] Error message
+ [2024-11-11 20:50:25,354] [MainThread] [main.py:21] [CRITICAL] Critical message
+
+==================================================
+New logging session started: 2024-11-11 20:50:33
+==================================================
+ [2024-11-11 20:50:33,872] [MainThread] [main.py:18] [INFO    ] Info message
+ [2024-11-11 20:50:33,872] [MainThread] [main.py:19] [WARNING ] Warning message
+ [2024-11-11 20:50:33,873] [MainThread] [main.py:20] [ERROR   ] Error message
+ [2024-11-11 20:50:33,873] [MainThread] [main.py:21] [CRITICAL] Critical message
+
+==================================================
+New logging session started: 2024-11-11 20:55:40
+==================================================
+ [2024-11-11 20:55:40,046] [MainThread] [main.py:18] [INFO    ] Info message
+ [2024-11-11 20:55:40,046] [MainThread] [main.py:19] [WARNING ] Warning message
+ [2024-11-11 20:55:40,046] [MainThread] [main.py:20] [ERROR   ] Error message
+ [2024-11-11 20:55:40,047] [MainThread] [main.py:21] [CRITICAL] Critical message
+ [2024-11-11 20:55:44,141] [MainThread] [QuizBot.py:36] [INFO    ] Found 5 iframes on this retry. 16 retries left.
+ [2024-11-11 20:55:44,272] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 20:55:44,296] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-11 20:55:44,319] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-11 20:55:44,443] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-11 20:55:44,470] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-11 20:55:44,482] [MainThread] [QuizBot.py:36] [INFO    ] Found 7 iframes on this retry. 16 retries left.
+ [2024-11-11 20:55:44,499] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 20:55:44,543] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-11 20:55:44,651] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-11 20:55:44,785] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-11 20:55:44,805] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-11 20:55:44,869] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 6. Retrying next iframe.
+ [2024-11-11 20:55:44,891] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 7. Retrying next iframe.
+ [2024-11-11 20:55:44,899] [MainThread] [QuizBot.py:36] [INFO    ] Found 15 iframes on this retry. 16 retries left.
+ [2024-11-11 20:55:44,915] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 20:55:44,945] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-11 20:55:44,964] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-11 20:55:44,994] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-11 20:55:45,019] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-11 20:55:45,040] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 6. Retrying next iframe.
+ [2024-11-11 20:55:45,061] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 7. Retrying next iframe.
+ [2024-11-11 20:55:45,081] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 8. Retrying next iframe.
+ [2024-11-11 20:55:45,110] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 9. Retrying next iframe.
+ [2024-11-11 20:55:45,236] [MainThread] [QuizBot.py:46] [INFO    ] Clicked button in iframe 10
+
+==================================================
+New logging session started: 2024-11-11 20:56:06
+==================================================
+ [2024-11-11 20:56:06,596] [MainThread] [main.py:18] [INFO    ] Info message
+ [2024-11-11 20:56:06,596] [MainThread] [main.py:19] [WARNING ] Warning message
+ [2024-11-11 20:56:06,596] [MainThread] [main.py:20] [ERROR   ] Error message
+ [2024-11-11 20:56:06,596] [MainThread] [main.py:21] [CRITICAL] Critical message
+ [2024-11-11 20:56:10,240] [MainThread] [QuizBot.py:36] [INFO    ] Found 5 iframes on this retry. 16 retries left.
+ [2024-11-11 20:56:10,286] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 20:56:10,329] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-11 20:56:10,352] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-11 20:56:10,384] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-11 20:56:10,411] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-11 20:56:10,421] [MainThread] [QuizBot.py:36] [INFO    ] Found 5 iframes on this retry. 16 retries left.
+ [2024-11-11 20:56:10,435] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 20:56:10,455] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-11 20:56:10,511] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-11 20:56:10,532] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-11 20:56:10,807] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-11 20:56:10,842] [MainThread] [QuizBot.py:36] [INFO    ] Found 11 iframes on this retry. 16 retries left.
+ [2024-11-11 20:56:10,866] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 20:56:10,892] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-11 20:56:10,913] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-11 20:56:10,978] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-11 20:56:11,043] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-11 20:56:11,076] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 6. Retrying next iframe.
+ [2024-11-11 20:56:11,100] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 7. Retrying next iframe.
+ [2024-11-11 20:56:11,130] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 8. Retrying next iframe.
+ [2024-11-11 20:56:11,255] [MainThread] [QuizBot.py:46] [INFO    ] Clicked button in iframe 9
+ [2024-11-11 20:56:15,117] [MainThread] [QuizBot.py:36] [INFO    ] Found 5 iframes on this retry. 16 retries left.
+ [2024-11-11 20:56:15,478] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 20:56:15,503] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-11 20:56:15,552] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-11 20:56:15,616] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-11 20:56:15,639] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-11 20:56:15,649] [MainThread] [QuizBot.py:36] [INFO    ] Found 11 iframes on this retry. 16 retries left.
+ [2024-11-11 20:56:15,672] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 20:56:15,695] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-11 20:56:15,720] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-11 20:56:15,745] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-11 20:56:15,767] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-11 20:56:15,787] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 6. Retrying next iframe.
+ [2024-11-11 20:56:15,806] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 7. Retrying next iframe.
+ [2024-11-11 20:56:15,826] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 8. Retrying next iframe.
+ [2024-11-11 20:56:15,847] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 9. Retrying next iframe.
+ [2024-11-11 20:56:15,872] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 10. Retrying next iframe.
+ [2024-11-11 20:56:15,895] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 11. Retrying next iframe.
+ [2024-11-11 20:56:15,903] [MainThread] [QuizBot.py:36] [INFO    ] Found 11 iframes on this retry. 16 retries left.
+ [2024-11-11 20:56:15,925] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 20:56:15,946] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-11 20:56:15,969] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-11 20:56:15,994] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-11 20:56:16,013] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-11 20:56:16,032] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 6. Retrying next iframe.
+ [2024-11-11 20:56:16,051] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 7. Retrying next iframe.
+ [2024-11-11 20:56:16,072] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 8. Retrying next iframe.
+ [2024-11-11 20:56:16,090] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 9. Retrying next iframe.
+ [2024-11-11 20:56:16,108] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 10. Retrying next iframe.
+ [2024-11-11 20:56:16,131] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 11. Retrying next iframe.
+ [2024-11-11 20:56:16,144] [MainThread] [QuizBot.py:36] [INFO    ] Found 11 iframes on this retry. 16 retries left.
+ [2024-11-11 20:56:16,176] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 20:56:16,206] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-11 20:56:16,230] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-11 20:56:16,252] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-11 20:56:16,298] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-11 20:56:16,315] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 6. Retrying next iframe.
+ [2024-11-11 20:56:16,335] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 7. Retrying next iframe.
+ [2024-11-11 20:56:16,354] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 8. Retrying next iframe.
+ [2024-11-11 20:56:16,379] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 9. Retrying next iframe.
+ [2024-11-11 20:56:16,399] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 10. Retrying next iframe.
+ [2024-11-11 20:56:16,420] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 11. Retrying next iframe.
+ [2024-11-11 20:56:16,429] [MainThread] [QuizBot.py:36] [INFO    ] Found 12 iframes on this retry. 16 retries left.
+ [2024-11-11 20:56:16,448] [MainThread] [QuizBot.py:51] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 20:56:16,608] [MainThread] [QuizBot.py:46] [INFO    ] Clicked button in iframe 2
+ [2024-11-11 20:56:16,608] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 1
+ [2024-11-11 20:56:16,622] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = None
+ [2024-11-11 20:56:16,927] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'A place where stolen vehicles are dismantled so that the parts can be sold or used to repair other stolen vehicles is called a ...', 'Answers': ['Wreck deck', 'Chop shop', 'Whip strip', 'Hack shack'], 'Correct': None}
+ [2024-11-11 20:56:16,927] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:16,927] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 1
+ [2024-11-11 20:56:16,939] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5155,h_3428/318/318c58605b91f2a7ea2e1d4a11fc819c.webp
+ [2024-11-11 20:56:17,099] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'A place where stolen vehicles are dismantled so that the parts can be sold or used to repair other stolen vehicles is called a ...', 'Answers': ['Wreck deck', 'Chop shop', 'Whip strip', 'Hack shack'], 'Correct': None}
+ [2024-11-11 20:56:17,099] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:17,099] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 1
+ [2024-11-11 20:56:17,109] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5155,h_3428/318/318c58605b91f2a7ea2e1d4a11fc819c.webp
+ [2024-11-11 20:56:17,294] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'A place where stolen vehicles are dismantled so that the parts can be sold or used to repair other stolen vehicles is called a ...', 'Answers': ['Wreck deck', 'Chop shop', 'Whip strip', 'Hack shack'], 'Correct': None}
+ [2024-11-11 20:56:17,294] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:17,294] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 1
+ [2024-11-11 20:56:17,303] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5155,h_3428/318/318c58605b91f2a7ea2e1d4a11fc819c.webp
+ [2024-11-11 20:56:17,490] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'A place where stolen vehicles are dismantled so that the parts can be sold or used to repair other stolen vehicles is called a ...', 'Answers': ['Wreck deck', 'Chop shop', 'Whip strip', 'Hack shack'], 'Correct': None}
+ [2024-11-11 20:56:17,490] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:17,491] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 1
+ [2024-11-11 20:56:17,542] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5155,h_3428/318/318c58605b91f2a7ea2e1d4a11fc819c.webp
+ [2024-11-11 20:56:17,823] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'A place where stolen vehicles are dismantled so that the parts can be sold or used to repair other stolen vehicles is called a ...', 'Answers': ['Wreck deck', 'Chop shop', 'Whip strip', 'Hack shack'], 'Correct': None}
+ [2024-11-11 20:56:17,823] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:17,823] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 1
+ [2024-11-11 20:56:17,855] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5155,h_3428/318/318c58605b91f2a7ea2e1d4a11fc819c.webp
+ [2024-11-11 20:56:18,195] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'A place where stolen vehicles are dismantled so that the parts can be sold or used to repair other stolen vehicles is called a ...', 'Answers': ['Wreck deck', 'Chop shop', 'Whip strip', 'Hack shack'], 'Correct': None}
+ [2024-11-11 20:56:18,195] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:18,195] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 1
+ [2024-11-11 20:56:18,203] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5155,h_3428/318/318c58605b91f2a7ea2e1d4a11fc819c.webp
+ [2024-11-11 20:56:18,358] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'A place where stolen vehicles are dismantled so that the parts can be sold or used to repair other stolen vehicles is called a ...', 'Answers': ['Wreck deck', 'Chop shop', 'Whip strip', 'Hack shack'], 'Correct': None}
+ [2024-11-11 20:56:18,358] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:18,358] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 1
+ [2024-11-11 20:56:18,368] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5155,h_3428/318/318c58605b91f2a7ea2e1d4a11fc819c.webp
+ [2024-11-11 20:56:18,526] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'A place where stolen vehicles are dismantled so that the parts can be sold or used to repair other stolen vehicles is called a ...', 'Answers': ['Wreck deck', 'Chop shop', 'Whip strip', 'Hack shack'], 'Correct': None}
+ [2024-11-11 20:56:18,526] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:18,526] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 1
+ [2024-11-11 20:56:18,535] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5155,h_3428/318/318c58605b91f2a7ea2e1d4a11fc819c.webp
+ [2024-11-11 20:56:18,746] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'A place where stolen vehicles are dismantled so that the parts can be sold or used to repair other stolen vehicles is called a ...', 'Answers': ['Wreck deck', 'Chop shop', 'Whip strip', 'Hack shack'], 'Correct': 1}
+ [2024-11-11 20:56:18,858] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 2
+ [2024-11-11 20:56:18,870] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5155,h_3428/318/318c58605b91f2a7ea2e1d4a11fc819c.webp
+ [2024-11-11 20:56:19,698] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'Which US president was at the centre of the Watergate scandal?', 'Answers': ['Gerald Ford', 'Dwight D Eisenhower', 'Richard Nixon', 'Lyndon B Johnson'], 'Correct': None}
+ [2024-11-11 20:56:19,698] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:19,699] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 2
+ [2024-11-11 20:56:19,707] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = None
+ [2024-11-11 20:56:19,836] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'Which US president was at the centre of the Watergate scandal?', 'Answers': ['Gerald Ford', 'Dwight D Eisenhower', 'Richard Nixon', 'Lyndon B Johnson'], 'Correct': None}
+ [2024-11-11 20:56:19,837] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:19,837] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 2
+ [2024-11-11 20:56:19,847] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = None
+ [2024-11-11 20:56:19,989] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'Which US president was at the centre of the Watergate scandal?', 'Answers': ['Gerald Ford', 'Dwight D Eisenhower', 'Richard Nixon', 'Lyndon B Johnson'], 'Correct': 2}
+ [2024-11-11 20:56:20,082] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 3
+ [2024-11-11 20:56:20,098] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_2856,h_2142/c9a/c9a60b02ff7131d645fbf0c6dc7d8369.webp
+ [2024-11-11 20:56:20,966] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'In a medieval castle, what name was given to an opening in the wall from which cannons were fired?', 'Answers': ['Keep', 'Portcullis', 'Embrasure', 'Rampart'], 'Correct': None}
+ [2024-11-11 20:56:20,967] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:20,967] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 3
+ [2024-11-11 20:56:20,975] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_2000,h_1338/7bf/7bf0bfb93002aaaa6832f2b02067763b.webp
+ [2024-11-11 20:56:21,098] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'In a medieval castle, what name was given to an opening in the wall from which cannons were fired?', 'Answers': ['Keep', 'Portcullis', 'Embrasure', 'Rampart'], 'Correct': None}
+ [2024-11-11 20:56:21,098] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:21,098] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 3
+ [2024-11-11 20:56:21,108] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_2000,h_1338/7bf/7bf0bfb93002aaaa6832f2b02067763b.webp
+ [2024-11-11 20:56:21,242] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'In a medieval castle, what name was given to an opening in the wall from which cannons were fired?', 'Answers': ['Keep', 'Portcullis', 'Embrasure', 'Rampart'], 'Correct': None}
+ [2024-11-11 20:56:21,242] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:21,242] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 3
+ [2024-11-11 20:56:21,250] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_2000,h_1338/7bf/7bf0bfb93002aaaa6832f2b02067763b.webp
+ [2024-11-11 20:56:21,415] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'In a medieval castle, what name was given to an opening in the wall from which cannons were fired?', 'Answers': ['Keep', 'Portcullis', 'Embrasure', 'Rampart'], 'Correct': 2}
+ [2024-11-11 20:56:21,502] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 4
+ [2024-11-11 20:56:21,515] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_2000,h_1338/7bf/7bf0bfb93002aaaa6832f2b02067763b.webp
+ [2024-11-11 20:56:22,327] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': "What is the alternate name for Beethoven's Third Symphony?", 'Answers': ['Pastorale', 'Eroica'], 'Correct': None}
+ [2024-11-11 20:56:22,327] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:22,327] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 4
+ [2024-11-11 20:56:22,336] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_3888,h_2592/5d8/5d807f496e16d471f61f0c81bd2cfed4.webp
+ [2024-11-11 20:56:22,446] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': "What is the alternate name for Beethoven's Third Symphony?", 'Answers': ['Pastorale', 'Eroica'], 'Correct': None}
+ [2024-11-11 20:56:22,446] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:22,447] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 4
+ [2024-11-11 20:56:22,458] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_3888,h_2592/5d8/5d807f496e16d471f61f0c81bd2cfed4.webp
+ [2024-11-11 20:56:22,602] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': "What is the alternate name for Beethoven's Third Symphony?", 'Answers': ['Pastorale', 'Eroica'], 'Correct': None}
+ [2024-11-11 20:56:22,602] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:22,602] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 4
+ [2024-11-11 20:56:22,612] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_3888,h_2592/5d8/5d807f496e16d471f61f0c81bd2cfed4.webp
+ [2024-11-11 20:56:22,727] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': "What is the alternate name for Beethoven's Third Symphony?", 'Answers': ['Pastorale', 'Eroica'], 'Correct': 1}
+ [2024-11-11 20:56:22,815] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 5
+ [2024-11-11 20:56:22,828] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_3888,h_2592/5d8/5d807f496e16d471f61f0c81bd2cfed4.webp
+ [2024-11-11 20:56:23,701] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'Cerumen is more commonly known as ...', 'Answers': ['Tears', 'Urine', 'Stomach acid', 'Ear wax'], 'Correct': None}
+ [2024-11-11 20:56:23,701] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:23,701] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 5
+ [2024-11-11 20:56:23,711] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_6720,h_4480/6d2/6d2dcdc76c36b329e76dcaac0f3327df.webp
+ [2024-11-11 20:56:23,856] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'Cerumen is more commonly known as ...', 'Answers': ['Tears', 'Urine', 'Stomach acid', 'Ear wax'], 'Correct': None}
+ [2024-11-11 20:56:23,856] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:23,856] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 5
+ [2024-11-11 20:56:23,867] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_6720,h_4480/6d2/6d2dcdc76c36b329e76dcaac0f3327df.webp
+ [2024-11-11 20:56:24,013] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'Cerumen is more commonly known as ...', 'Answers': ['Tears', 'Urine', 'Stomach acid', 'Ear wax'], 'Correct': 3}
+ [2024-11-11 20:56:24,111] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 6
+ [2024-11-11 20:56:24,136] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_6720,h_4480/6d2/6d2dcdc76c36b329e76dcaac0f3327df.webp
+ [2024-11-11 20:56:24,952] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'Which country broke away from Ethiopia in 1991?', 'Answers': ['Djibouti', 'South Sudan', 'Somalia', 'Eritrea'], 'Correct': None}
+ [2024-11-11 20:56:24,952] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:24,952] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 6
+ [2024-11-11 20:56:24,962] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_3376,h_4506/a8c/a8cb5a93f6d36eeef0b01eaa1f3e0b74.webp
+ [2024-11-11 20:56:25,099] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'Which country broke away from Ethiopia in 1991?', 'Answers': ['Djibouti', 'South Sudan', 'Somalia', 'Eritrea'], 'Correct': None}
+ [2024-11-11 20:56:25,099] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:25,099] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 6
+ [2024-11-11 20:56:25,108] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_3376,h_4506/a8c/a8cb5a93f6d36eeef0b01eaa1f3e0b74.webp
+ [2024-11-11 20:56:25,249] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'Which country broke away from Ethiopia in 1991?', 'Answers': ['Djibouti', 'South Sudan', 'Somalia', 'Eritrea'], 'Correct': 3}
+ [2024-11-11 20:56:25,341] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 7
+ [2024-11-11 20:56:25,353] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_3376,h_4506/a8c/a8cb5a93f6d36eeef0b01eaa1f3e0b74.webp
+ [2024-11-11 20:56:26,246] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'Sea urchins belong to which marine animal group?', 'Answers': ['Pinnipeds', 'Crustaceans', 'Fissipeds', 'Echinoderms'], 'Correct': None}
+ [2024-11-11 20:56:26,247] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:26,247] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 7
+ [2024-11-11 20:56:26,257] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5184,h_3888/f1f/f1ff8878af0f62a138bc767bca722db2.webp
+ [2024-11-11 20:56:26,403] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'Sea urchins belong to which marine animal group?', 'Answers': ['Pinnipeds', 'Crustaceans', 'Fissipeds', 'Echinoderms'], 'Correct': None}
+ [2024-11-11 20:56:26,403] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:26,403] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 7
+ [2024-11-11 20:56:26,413] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5184,h_3888/f1f/f1ff8878af0f62a138bc767bca722db2.webp
+ [2024-11-11 20:56:26,560] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'Sea urchins belong to which marine animal group?', 'Answers': ['Pinnipeds', 'Crustaceans', 'Fissipeds', 'Echinoderms'], 'Correct': 3}
+ [2024-11-11 20:56:26,673] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 8
+ [2024-11-11 20:56:26,694] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5184,h_3888/f1f/f1ff8878af0f62a138bc767bca722db2.webp
+ [2024-11-11 20:56:27,530] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'What is an "Honest John"?', 'Answers': ['A small stove', 'A police informant', 'A bar with an honour system', 'A piece of playground equipment'], 'Correct': None}
+ [2024-11-11 20:56:27,530] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:27,530] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 8
+ [2024-11-11 20:56:27,540] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_6016,h_4016/dbb/dbb8e40a0706f9e3d48139c5bd4d036e.webp
+ [2024-11-11 20:56:27,687] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'What is an "Honest John"?', 'Answers': ['A small stove', 'A police informant', 'A bar with an honour system', 'A piece of playground equipment'], 'Correct': None}
+ [2024-11-11 20:56:27,687] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:27,688] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 8
+ [2024-11-11 20:56:27,698] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_6016,h_4016/dbb/dbb8e40a0706f9e3d48139c5bd4d036e.webp
+ [2024-11-11 20:56:27,845] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'What is an "Honest John"?', 'Answers': ['A small stove', 'A police informant', 'A bar with an honour system', 'A piece of playground equipment'], 'Correct': 2}
+ [2024-11-11 20:56:27,948] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 9
+ [2024-11-11 20:56:27,959] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_6016,h_4016/dbb/dbb8e40a0706f9e3d48139c5bd4d036e.webp
+ [2024-11-11 20:56:28,839] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'According to the saying, which city wasn\'t "built in a day"?', 'Answers': ['Paris', 'Tokyo', 'London', 'Rome'], 'Correct': None}
+ [2024-11-11 20:56:28,839] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:28,839] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 9
+ [2024-11-11 20:56:28,849] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_6000,h_4000/e8c/e8c2097eba9fec05080d009177d7c6bf.webp
+ [2024-11-11 20:56:28,992] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'According to the saying, which city wasn\'t "built in a day"?', 'Answers': ['Paris', 'Tokyo', 'London', 'Rome'], 'Correct': None}
+ [2024-11-11 20:56:28,992] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:28,992] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 9
+ [2024-11-11 20:56:29,003] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_6000,h_4000/e8c/e8c2097eba9fec05080d009177d7c6bf.webp
+ [2024-11-11 20:56:29,158] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'According to the saying, which city wasn\'t "built in a day"?', 'Answers': ['Paris', 'Tokyo', 'London', 'Rome'], 'Correct': 3}
+ [2024-11-11 20:56:29,256] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 10
+ [2024-11-11 20:56:29,272] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_6000,h_4000/e8c/e8c2097eba9fec05080d009177d7c6bf.webp
+ [2024-11-11 20:56:30,145] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'What produce might be butterhead, iceberg, or romaine?', 'Answers': ['Lettuce', 'Potatoes', 'Cucumber', 'Tomatoes'], 'Correct': None}
+ [2024-11-11 20:56:30,145] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:30,145] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 10
+ [2024-11-11 20:56:30,155] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5330,h_3543/567/567b0cc40cb936f7b67744cf9eb4d4ec.webp
+ [2024-11-11 20:56:30,299] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'What produce might be butterhead, iceberg, or romaine?', 'Answers': ['Lettuce', 'Potatoes', 'Cucumber', 'Tomatoes'], 'Correct': None}
+ [2024-11-11 20:56:30,299] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:30,299] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 10
+ [2024-11-11 20:56:30,309] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5330,h_3543/567/567b0cc40cb936f7b67744cf9eb4d4ec.webp
+ [2024-11-11 20:56:30,450] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'What produce might be butterhead, iceberg, or romaine?', 'Answers': ['Lettuce', 'Potatoes', 'Cucumber', 'Tomatoes'], 'Correct': 0}
+ [2024-11-11 20:56:30,533] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 11
+ [2024-11-11 20:56:30,544] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5330,h_3543/567/567b0cc40cb936f7b67744cf9eb4d4ec.webp
+ [2024-11-11 20:56:31,428] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'What Billy Joel song was inspired by a night out with Christie Brinkley, Whitney Houston and Elle Macpherson?', 'Answers': ["We Didn't Start the Fire", 'Piano Man', 'Uptown Girl', 'Always a Woman'], 'Correct': None}
+ [2024-11-11 20:56:31,428] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:31,428] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 11
+ [2024-11-11 20:56:31,437] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_1931,h_2504/05c/05c06200c6895147e2b4f080a0d6e26c.webp
+ [2024-11-11 20:56:31,614] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'What Billy Joel song was inspired by a night out with Christie Brinkley, Whitney Houston and Elle Macpherson?', 'Answers': ["We Didn't Start the Fire", 'Piano Man', 'Uptown Girl', 'Always a Woman'], 'Correct': None}
+ [2024-11-11 20:56:31,614] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:31,614] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 11
+ [2024-11-11 20:56:31,624] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_1931,h_2504/05c/05c06200c6895147e2b4f080a0d6e26c.webp
+ [2024-11-11 20:56:31,774] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'What Billy Joel song was inspired by a night out with Christie Brinkley, Whitney Houston and Elle Macpherson?', 'Answers': ["We Didn't Start the Fire", 'Piano Man', 'Uptown Girl', 'Always a Woman'], 'Correct': 2}
+ [2024-11-11 20:56:31,873] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 12
+ [2024-11-11 20:56:31,887] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_1931,h_2504/05c/05c06200c6895147e2b4f080a0d6e26c.webp
+ [2024-11-11 20:56:32,714] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'According to legend, what kind of animal caused the great Chicago fire of 1871?', 'Answers': ['A duck', 'A goat', 'A cat', 'A cow'], 'Correct': None}
+ [2024-11-11 20:56:32,714] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:32,714] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 12
+ [2024-11-11 20:56:32,723] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_700,h_420/dfa/dfa418d3bc6a1078ceff3925566001c3.webp
+ [2024-11-11 20:56:32,882] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'According to legend, what kind of animal caused the great Chicago fire of 1871?', 'Answers': ['A duck', 'A goat', 'A cat', 'A cow'], 'Correct': None}
+ [2024-11-11 20:56:32,882] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:32,882] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 12
+ [2024-11-11 20:56:32,898] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_700,h_420/dfa/dfa418d3bc6a1078ceff3925566001c3.webp
+ [2024-11-11 20:56:33,076] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'According to legend, what kind of animal caused the great Chicago fire of 1871?', 'Answers': ['A duck', 'A goat', 'A cat', 'A cow'], 'Correct': 3}
+ [2024-11-11 20:56:33,169] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 13
+ [2024-11-11 20:56:33,185] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_700,h_420/dfa/dfa418d3bc6a1078ceff3925566001c3.webp
+ [2024-11-11 20:56:33,982] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'How many points are on a single star on the American flag?', 'Answers': ['Five', 'Six'], 'Correct': None}
+ [2024-11-11 20:56:33,983] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:33,983] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 13
+ [2024-11-11 20:56:33,990] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_4592,h_3448/a65/a651ae3cc51eb5930049df804e8bb4a7.webp
+ [2024-11-11 20:56:34,113] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'How many points are on a single star on the American flag?', 'Answers': ['Five', 'Six'], 'Correct': None}
+ [2024-11-11 20:56:34,113] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:34,113] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 13
+ [2024-11-11 20:56:34,126] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_4592,h_3448/a65/a651ae3cc51eb5930049df804e8bb4a7.webp
+ [2024-11-11 20:56:34,263] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'How many points are on a single star on the American flag?', 'Answers': ['Five', 'Six'], 'Correct': None}
+ [2024-11-11 20:56:34,264] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:34,264] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 13
+ [2024-11-11 20:56:34,273] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_4592,h_3448/a65/a651ae3cc51eb5930049df804e8bb4a7.webp
+ [2024-11-11 20:56:34,408] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'How many points are on a single star on the American flag?', 'Answers': ['Five', 'Six'], 'Correct': 0}
+ [2024-11-11 20:56:34,499] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 14
+ [2024-11-11 20:56:34,513] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_4592,h_3448/a65/a651ae3cc51eb5930049df804e8bb4a7.webp
+ [2024-11-11 20:56:35,386] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'Bunions affect which body part?', 'Answers': ['Tongue', 'Tonsils', 'Toe', 'Throat'], 'Correct': None}
+ [2024-11-11 20:56:35,386] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:35,386] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 14
+ [2024-11-11 20:56:35,395] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_4752,h_3168/1c7/1c72c92b66e0a66a4fcf0e254f19ae39.webp
+ [2024-11-11 20:56:35,517] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'Bunions affect which body part?', 'Answers': ['Tongue', 'Tonsils', 'Toe', 'Throat'], 'Correct': None}
+ [2024-11-11 20:56:35,517] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:35,517] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 14
+ [2024-11-11 20:56:35,527] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_4752,h_3168/1c7/1c72c92b66e0a66a4fcf0e254f19ae39.webp
+ [2024-11-11 20:56:35,680] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'Bunions affect which body part?', 'Answers': ['Tongue', 'Tonsils', 'Toe', 'Throat'], 'Correct': 2}
+ [2024-11-11 20:56:35,773] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 15
+ [2024-11-11 20:56:35,792] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_4752,h_3168/1c7/1c72c92b66e0a66a4fcf0e254f19ae39.webp
+ [2024-11-11 20:56:36,663] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'Actors Nick Offerman and Megan Mullally are ...', 'Answers': ['Cousins', 'Married', 'Twins', 'Brother and sister-in-law'], 'Correct': None}
+ [2024-11-11 20:56:36,663] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:36,663] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 15
+ [2024-11-11 20:56:36,673] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_2000,h_1125/02e/02ee02d40063ae0ce6b9e0c2b0ac3124.webp
+ [2024-11-11 20:56:36,816] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'Actors Nick Offerman and Megan Mullally are ...', 'Answers': ['Cousins', 'Married', 'Twins', 'Brother and sister-in-law'], 'Correct': None}
+ [2024-11-11 20:56:36,816] [MainThread] [QuizBot.py:119] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 20:56:36,816] [MainThread] [QuizBot.py:89] [INFO    ] Processing question 15
+ [2024-11-11 20:56:36,827] [MainThread] [QuizBot.py:93] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_2000,h_1125/02e/02ee02d40063ae0ce6b9e0c2b0ac3124.webp
+ [2024-11-11 20:56:36,973] [MainThread] [QuizBot.py:113] [INFO    ] Collected question data: {'Question': 'Actors Nick Offerman and Megan Mullally are ...', 'Answers': ['Cousins', 'Married', 'Twins', 'Brother and sister-in-law'], 'Correct': 1}
+
+==================================================
+New logging session started: 2024-11-11 21:01:22
+==================================================
+ [2024-11-11 21:01:22,470] [MainThread] [main.py:18] [INFO    ] Info message
+ [2024-11-11 21:01:22,470] [MainThread] [main.py:19] [WARNING ] Warning message
+ [2024-11-11 21:01:22,470] [MainThread] [main.py:20] [ERROR   ] Error message
+ [2024-11-11 21:01:22,470] [MainThread] [main.py:21] [CRITICAL] Critical message
+ [2024-11-11 21:01:26,441] [MainThread] [QuizBot.py:35] [INFO    ] Found 5 iframes on this retry. 16 retries left.
+ [2024-11-11 21:01:26,491] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 21:01:26,567] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-11 21:01:26,622] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-11 21:01:26,645] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-11 21:01:26,682] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-11 21:01:26,695] [MainThread] [QuizBot.py:35] [INFO    ] Found 7 iframes on this retry. 16 retries left.
+ [2024-11-11 21:01:26,712] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 21:01:26,822] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-11 21:01:26,871] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-11 21:01:27,009] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-11 21:01:27,047] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-11 21:01:27,160] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 6. Retrying next iframe.
+ [2024-11-11 21:01:27,193] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 7. Retrying next iframe.
+ [2024-11-11 21:01:27,263] [MainThread] [QuizBot.py:35] [INFO    ] Found 15 iframes on this retry. 16 retries left.
+ [2024-11-11 21:01:27,305] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 21:01:27,337] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-11 21:01:27,367] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-11 21:01:27,416] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-11 21:01:27,452] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-11 21:01:27,481] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 6. Retrying next iframe.
+ [2024-11-11 21:01:27,508] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 7. Retrying next iframe.
+ [2024-11-11 21:01:27,531] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 8. Retrying next iframe.
+ [2024-11-11 21:01:27,553] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 9. Retrying next iframe.
+ [2024-11-11 21:01:27,711] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the stuff-button element successfully.
+ [2024-11-11 21:01:27,712] [MainThread] [QuizBot.py:45] [INFO    ] Clicked button in iframe 10
+ [2024-11-11 21:01:30,911] [MainThread] [QuizBot.py:35] [INFO    ] Found 5 iframes on this retry. 16 retries left.
+ [2024-11-11 21:01:31,389] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 21:01:31,414] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-11 21:01:31,437] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-11 21:01:31,460] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-11 21:01:31,483] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-11 21:01:31,493] [MainThread] [QuizBot.py:35] [INFO    ] Found 11 iframes on this retry. 16 retries left.
+ [2024-11-11 21:01:31,512] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 21:01:31,534] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-11 21:01:31,554] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-11 21:01:31,600] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-11 21:01:31,627] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-11 21:01:31,649] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 6. Retrying next iframe.
+ [2024-11-11 21:01:31,678] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 7. Retrying next iframe.
+ [2024-11-11 21:01:31,698] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 8. Retrying next iframe.
+ [2024-11-11 21:01:31,719] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 9. Retrying next iframe.
+ [2024-11-11 21:01:31,745] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 10. Retrying next iframe.
+ [2024-11-11 21:01:31,777] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 11. Retrying next iframe.
+ [2024-11-11 21:01:31,787] [MainThread] [QuizBot.py:35] [INFO    ] Found 12 iframes on this retry. 16 retries left.
+ [2024-11-11 21:01:31,814] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 21:01:31,849] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-11 21:01:31,873] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-11 21:01:31,895] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-11 21:01:31,917] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-11 21:01:31,935] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 6. Retrying next iframe.
+ [2024-11-11 21:01:31,955] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 7. Retrying next iframe.
+ [2024-11-11 21:01:31,975] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 8. Retrying next iframe.
+ [2024-11-11 21:01:31,994] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 9. Retrying next iframe.
+ [2024-11-11 21:01:32,015] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 10. Retrying next iframe.
+ [2024-11-11 21:01:32,035] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 11. Retrying next iframe.
+ [2024-11-11 21:01:32,057] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 12. Retrying next iframe.
+ [2024-11-11 21:01:32,066] [MainThread] [QuizBot.py:35] [INFO    ] Found 12 iframes on this retry. 16 retries left.
+ [2024-11-11 21:01:32,085] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 21:01:32,106] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-11 21:01:32,124] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-11 21:01:32,142] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-11 21:01:32,160] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-11 21:01:32,178] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 6. Retrying next iframe.
+ [2024-11-11 21:01:32,196] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 7. Retrying next iframe.
+ [2024-11-11 21:01:32,215] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 8. Retrying next iframe.
+ [2024-11-11 21:01:32,236] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 9. Retrying next iframe.
+ [2024-11-11 21:01:32,262] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 10. Retrying next iframe.
+ [2024-11-11 21:01:32,354] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 11. Retrying next iframe.
+ [2024-11-11 21:01:32,374] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 12. Retrying next iframe.
+ [2024-11-11 21:01:32,385] [MainThread] [QuizBot.py:35] [INFO    ] Found 13 iframes on this retry. 16 retries left.
+ [2024-11-11 21:01:32,403] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 21:01:32,422] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-11 21:01:32,440] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-11 21:01:32,498] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-11 21:01:32,557] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-11 21:01:32,581] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 6. Retrying next iframe.
+ [2024-11-11 21:01:32,603] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 7. Retrying next iframe.
+ [2024-11-11 21:01:32,694] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 8. Retrying next iframe.
+ [2024-11-11 21:01:32,733] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 9. Retrying next iframe.
+ [2024-11-11 21:01:32,814] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 10. Retrying next iframe.
+ [2024-11-11 21:01:32,858] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 11. Retrying next iframe.
+ [2024-11-11 21:01:32,872] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 12. Retrying next iframe.
+ [2024-11-11 21:01:32,907] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 13. Retrying next iframe.
+ [2024-11-11 21:01:32,926] [MainThread] [QuizBot.py:35] [INFO    ] Found 14 iframes on this retry. 16 retries left.
+ [2024-11-11 21:01:32,973] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 21:01:33,012] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-11 21:01:33,048] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-11 21:01:33,120] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-11 21:01:33,152] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-11 21:01:33,178] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 6. Retrying next iframe.
+ [2024-11-11 21:01:33,202] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 7. Retrying next iframe.
+ [2024-11-11 21:01:33,228] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 8. Retrying next iframe.
+ [2024-11-11 21:01:33,252] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 9. Retrying next iframe.
+ [2024-11-11 21:01:33,287] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 10. Retrying next iframe.
+ [2024-11-11 21:01:33,316] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 11. Retrying next iframe.
+ [2024-11-11 21:01:33,341] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 12. Retrying next iframe.
+ [2024-11-11 21:01:33,370] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 13. Retrying next iframe.
+ [2024-11-11 21:01:33,401] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 14. Retrying next iframe.
+ [2024-11-11 21:01:33,412] [MainThread] [QuizBot.py:35] [INFO    ] Found 14 iframes on this retry. 16 retries left.
+ [2024-11-11 21:01:33,436] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 21:01:33,610] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the block-nav element successfully.
+ [2024-11-11 21:01:33,610] [MainThread] [QuizBot.py:45] [INFO    ] Clicked button in iframe 2
+ [2024-11-11 21:01:33,610] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 1
+ [2024-11-11 21:01:33,628] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5155,h_3428/318/318c58605b91f2a7ea2e1d4a11fc819c.webp
+ [2024-11-11 21:01:33,723] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:01:33,910] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'A place where stolen vehicles are dismantled so that the parts can be sold or used to repair other stolen vehicles is called a ...', 'Answers': ['Whip strip', 'Hack shack', 'Wreck deck', 'Chop shop'], 'Correct': None}
+ [2024-11-11 21:01:33,910] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:01:33,910] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 1
+ [2024-11-11 21:01:33,928] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5155,h_3428/318/318c58605b91f2a7ea2e1d4a11fc819c.webp
+
+==================================================
+New logging session started: 2024-11-11 21:04:25
+==================================================
+ [2024-11-11 21:04:25,437] [MainThread] [main.py:18] [INFO    ] Info message
+ [2024-11-11 21:04:25,438] [MainThread] [main.py:19] [WARNING ] Warning message
+ [2024-11-11 21:04:25,438] [MainThread] [main.py:20] [ERROR   ] Error message
+ [2024-11-11 21:04:25,438] [MainThread] [main.py:21] [CRITICAL] Critical message
+ [2024-11-11 21:04:29,238] [MainThread] [QuizBot.py:35] [INFO    ] Found 5 iframes on this retry. 16 retries left.
+ [2024-11-11 21:04:29,269] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 21:04:29,353] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-11 21:04:29,418] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-11 21:04:29,443] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-11 21:04:29,478] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-11 21:04:29,487] [MainThread] [QuizBot.py:35] [INFO    ] Found 7 iframes on this retry. 16 retries left.
+ [2024-11-11 21:04:29,505] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 21:04:29,544] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-11 21:04:29,817] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-11 21:04:29,847] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-11 21:04:29,880] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-11 21:04:29,919] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 6. Retrying next iframe.
+ [2024-11-11 21:04:29,990] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 7. Retrying next iframe.
+ [2024-11-11 21:04:30,008] [MainThread] [QuizBot.py:35] [INFO    ] Found 15 iframes on this retry. 16 retries left.
+ [2024-11-11 21:04:30,036] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 21:04:30,064] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-11 21:04:30,090] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-11 21:04:30,120] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-11 21:04:30,150] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-11 21:04:30,172] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 6. Retrying next iframe.
+ [2024-11-11 21:04:30,203] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 7. Retrying next iframe.
+ [2024-11-11 21:04:30,225] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 8. Retrying next iframe.
+ [2024-11-11 21:04:30,247] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 9. Retrying next iframe.
+ [2024-11-11 21:04:30,375] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the stuff-button element successfully.
+ [2024-11-11 21:04:30,375] [MainThread] [QuizBot.py:45] [INFO    ] Clicked button in iframe 10
+ [2024-11-11 21:04:34,697] [MainThread] [QuizBot.py:35] [INFO    ] Found 5 iframes on this retry. 16 retries left.
+ [2024-11-11 21:04:34,971] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 21:04:34,999] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-11 21:04:35,026] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-11 21:04:35,052] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-11 21:04:35,072] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-11 21:04:35,083] [MainThread] [QuizBot.py:35] [INFO    ] Found 11 iframes on this retry. 16 retries left.
+ [2024-11-11 21:04:35,102] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-11 21:04:35,123] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-11 21:04:35,144] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-11 21:04:35,165] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-11 21:04:35,187] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-11 21:04:35,212] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 6. Retrying next iframe.
+ [2024-11-11 21:04:35,238] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 7. Retrying next iframe.
+ [2024-11-11 21:04:35,273] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 8. Retrying next iframe.
+ [2024-11-11 21:04:35,299] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 9. Retrying next iframe.
+ [2024-11-11 21:04:35,322] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 10. Retrying next iframe.
+ [2024-11-11 21:04:35,345] [MainThread] [QuizBot.py:50] [WARNING ] Error accessing button in iframe 11. Retrying next iframe.
+ [2024-11-11 21:04:35,353] [MainThread] [QuizBot.py:35] [INFO    ] Found 11 iframes on this retry. 16 retries left.
+ [2024-11-11 21:04:35,488] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the block-nav element successfully.
+ [2024-11-11 21:04:35,489] [MainThread] [QuizBot.py:45] [INFO    ] Clicked button in iframe 1
+ [2024-11-11 21:04:35,489] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 1
+ [2024-11-11 21:04:35,503] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = None
+ [2024-11-11 21:04:35,678] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:35,761] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'A place where stolen vehicles are dismantled so that the parts can be sold or used to repair other stolen vehicles is called a ...', 'Answers': ['Wreck deck', 'Whip strip', 'Chop shop', 'Hack shack'], 'Correct': None}
+ [2024-11-11 21:04:35,761] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:35,761] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 1
+ [2024-11-11 21:04:35,771] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5155,h_3428/318/318c58605b91f2a7ea2e1d4a11fc819c.webp
+ [2024-11-11 21:04:35,872] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:35,930] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'A place where stolen vehicles are dismantled so that the parts can be sold or used to repair other stolen vehicles is called a ...', 'Answers': ['Wreck deck', 'Whip strip', 'Chop shop', 'Hack shack'], 'Correct': None}
+ [2024-11-11 21:04:35,931] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:35,931] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 1
+ [2024-11-11 21:04:35,940] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5155,h_3428/318/318c58605b91f2a7ea2e1d4a11fc819c.webp
+ [2024-11-11 21:04:36,093] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:36,187] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'A place where stolen vehicles are dismantled so that the parts can be sold or used to repair other stolen vehicles is called a ...', 'Answers': ['Wreck deck', 'Whip strip', 'Chop shop', 'Hack shack'], 'Correct': None}
+ [2024-11-11 21:04:36,187] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:36,187] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 1
+ [2024-11-11 21:04:36,201] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5155,h_3428/318/318c58605b91f2a7ea2e1d4a11fc819c.webp
+ [2024-11-11 21:04:36,311] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:36,474] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'A place where stolen vehicles are dismantled so that the parts can be sold or used to repair other stolen vehicles is called a ...', 'Answers': ['Wreck deck', 'Whip strip', 'Chop shop', 'Hack shack'], 'Correct': None}
+ [2024-11-11 21:04:36,474] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:36,474] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 1
+ [2024-11-11 21:04:36,492] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5155,h_3428/318/318c58605b91f2a7ea2e1d4a11fc819c.webp
+ [2024-11-11 21:04:36,598] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:36,724] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'A place where stolen vehicles are dismantled so that the parts can be sold or used to repair other stolen vehicles is called a ...', 'Answers': ['Wreck deck', 'Whip strip', 'Chop shop', 'Hack shack'], 'Correct': None}
+ [2024-11-11 21:04:36,724] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:36,724] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 1
+ [2024-11-11 21:04:36,735] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5155,h_3428/318/318c58605b91f2a7ea2e1d4a11fc819c.webp
+ [2024-11-11 21:04:36,807] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:36,894] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'A place where stolen vehicles are dismantled so that the parts can be sold or used to repair other stolen vehicles is called a ...', 'Answers': ['Wreck deck', 'Whip strip', 'Chop shop', 'Hack shack'], 'Correct': None}
+ [2024-11-11 21:04:36,894] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:36,894] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 1
+ [2024-11-11 21:04:36,905] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5155,h_3428/318/318c58605b91f2a7ea2e1d4a11fc819c.webp
+ [2024-11-11 21:04:36,995] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:37,272] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'A place where stolen vehicles are dismantled so that the parts can be sold or used to repair other stolen vehicles is called a ...', 'Answers': ['Wreck deck', 'Whip strip', 'Chop shop', 'Hack shack'], 'Correct': None}
+ [2024-11-11 21:04:37,272] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:37,272] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 1
+ [2024-11-11 21:04:37,293] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5155,h_3428/318/318c58605b91f2a7ea2e1d4a11fc819c.webp
+ [2024-11-11 21:04:37,460] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:37,717] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'A place where stolen vehicles are dismantled so that the parts can be sold or used to repair other stolen vehicles is called a ...', 'Answers': ['Wreck deck', 'Whip strip', 'Chop shop', 'Hack shack'], 'Correct': 2}
+ [2024-11-11 21:04:37,849] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the //button[text()="Next"] element successfully.
+ [2024-11-11 21:04:37,850] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 2
+ [2024-11-11 21:04:37,868] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5155,h_3428/318/318c58605b91f2a7ea2e1d4a11fc819c.webp
+ [2024-11-11 21:04:38,571] [MainThread] [SeleniumHelpers.py:53] [WARNING ] Stale element reference encountered. Retrying...
+ [2024-11-11 21:04:38,635] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:38,696] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'Which US president was at the centre of the Watergate scandal?', 'Answers': ['Lyndon B Johnson', 'Dwight D Eisenhower', 'Gerald Ford', 'Richard Nixon'], 'Correct': None}
+ [2024-11-11 21:04:38,696] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:38,696] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 2
+ [2024-11-11 21:04:38,706] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = None
+ [2024-11-11 21:04:38,773] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:38,844] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'Which US president was at the centre of the Watergate scandal?', 'Answers': ['Lyndon B Johnson', 'Dwight D Eisenhower', 'Gerald Ford', 'Richard Nixon'], 'Correct': None}
+ [2024-11-11 21:04:38,844] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:38,845] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 2
+ [2024-11-11 21:04:38,853] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = None
+ [2024-11-11 21:04:38,920] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:39,000] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'Which US president was at the centre of the Watergate scandal?', 'Answers': ['Lyndon B Johnson', 'Dwight D Eisenhower', 'Gerald Ford', 'Richard Nixon'], 'Correct': 3}
+ [2024-11-11 21:04:39,103] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the //button[text()="Next"] element successfully.
+ [2024-11-11 21:04:39,103] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 3
+ [2024-11-11 21:04:39,124] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_2856,h_2142/c9a/c9a60b02ff7131d645fbf0c6dc7d8369.webp
+ [2024-11-11 21:04:39,812] [MainThread] [SeleniumHelpers.py:53] [WARNING ] Stale element reference encountered. Retrying...
+ [2024-11-11 21:04:39,883] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:39,942] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'In a medieval castle, what name was given to an opening in the wall from which cannons were fired?', 'Answers': ['Keep', 'Portcullis', 'Embrasure', 'Rampart'], 'Correct': None}
+ [2024-11-11 21:04:39,942] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:39,942] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 3
+ [2024-11-11 21:04:39,952] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_2000,h_1338/7bf/7bf0bfb93002aaaa6832f2b02067763b.webp
+ [2024-11-11 21:04:40,019] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:40,127] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'In a medieval castle, what name was given to an opening in the wall from which cannons were fired?', 'Answers': ['Keep', 'Portcullis', 'Embrasure', 'Rampart'], 'Correct': None}
+ [2024-11-11 21:04:40,127] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:40,127] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 3
+ [2024-11-11 21:04:40,138] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_2000,h_1338/7bf/7bf0bfb93002aaaa6832f2b02067763b.webp
+ [2024-11-11 21:04:40,216] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:40,297] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'In a medieval castle, what name was given to an opening in the wall from which cannons were fired?', 'Answers': ['Keep', 'Portcullis', 'Embrasure', 'Rampart'], 'Correct': 2}
+ [2024-11-11 21:04:40,392] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the //button[text()="Next"] element successfully.
+ [2024-11-11 21:04:40,392] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 4
+ [2024-11-11 21:04:40,406] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_2000,h_1338/7bf/7bf0bfb93002aaaa6832f2b02067763b.webp
+ [2024-11-11 21:04:41,158] [MainThread] [SeleniumHelpers.py:53] [WARNING ] Stale element reference encountered. Retrying...
+ [2024-11-11 21:04:41,226] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:41,266] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': "What is the alternate name for Beethoven's Third Symphony?", 'Answers': ['Pastorale', 'Eroica'], 'Correct': None}
+ [2024-11-11 21:04:41,266] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:41,266] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 4
+ [2024-11-11 21:04:41,276] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_3888,h_2592/5d8/5d807f496e16d471f61f0c81bd2cfed4.webp
+ [2024-11-11 21:04:41,343] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:41,391] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': "What is the alternate name for Beethoven's Third Symphony?", 'Answers': ['Pastorale', 'Eroica'], 'Correct': None}
+ [2024-11-11 21:04:41,391] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:41,391] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 4
+ [2024-11-11 21:04:41,402] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_3888,h_2592/5d8/5d807f496e16d471f61f0c81bd2cfed4.webp
+ [2024-11-11 21:04:41,474] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:41,513] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': "What is the alternate name for Beethoven's Third Symphony?", 'Answers': ['Pastorale', 'Eroica'], 'Correct': None}
+ [2024-11-11 21:04:41,513] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:41,513] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 4
+ [2024-11-11 21:04:41,522] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_3888,h_2592/5d8/5d807f496e16d471f61f0c81bd2cfed4.webp
+ [2024-11-11 21:04:41,597] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:41,648] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': "What is the alternate name for Beethoven's Third Symphony?", 'Answers': ['Pastorale', 'Eroica'], 'Correct': 1}
+ [2024-11-11 21:04:41,740] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the //button[text()="Next"] element successfully.
+ [2024-11-11 21:04:41,740] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 5
+ [2024-11-11 21:04:41,754] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_3888,h_2592/5d8/5d807f496e16d471f61f0c81bd2cfed4.webp
+ [2024-11-11 21:04:42,466] [MainThread] [SeleniumHelpers.py:53] [WARNING ] Stale element reference encountered. Retrying...
+ [2024-11-11 21:04:42,556] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:42,631] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'Cerumen is more commonly known as ...', 'Answers': ['Ear wax', 'Urine', 'Stomach acid', 'Tears'], 'Correct': None}
+ [2024-11-11 21:04:42,631] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:42,631] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 5
+ [2024-11-11 21:04:42,642] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_6720,h_4480/6d2/6d2dcdc76c36b329e76dcaac0f3327df.webp
+ [2024-11-11 21:04:42,741] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:42,822] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'Cerumen is more commonly known as ...', 'Answers': ['Ear wax', 'Urine', 'Stomach acid', 'Tears'], 'Correct': None}
+ [2024-11-11 21:04:42,822] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:42,822] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 5
+ [2024-11-11 21:04:42,832] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_6720,h_4480/6d2/6d2dcdc76c36b329e76dcaac0f3327df.webp
+ [2024-11-11 21:04:42,906] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:42,985] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'Cerumen is more commonly known as ...', 'Answers': ['Ear wax', 'Urine', 'Stomach acid', 'Tears'], 'Correct': 0}
+ [2024-11-11 21:04:43,085] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the //button[text()="Next"] element successfully.
+ [2024-11-11 21:04:43,085] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 6
+ [2024-11-11 21:04:43,096] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_6720,h_4480/6d2/6d2dcdc76c36b329e76dcaac0f3327df.webp
+ [2024-11-11 21:04:43,835] [MainThread] [SeleniumHelpers.py:53] [WARNING ] Stale element reference encountered. Retrying...
+ [2024-11-11 21:04:43,897] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:43,974] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'Which country broke away from Ethiopia in 1991?', 'Answers': ['Eritrea', 'Djibouti', 'South Sudan', 'Somalia'], 'Correct': None}
+ [2024-11-11 21:04:43,974] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:43,974] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 6
+ [2024-11-11 21:04:43,984] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_3376,h_4506/a8c/a8cb5a93f6d36eeef0b01eaa1f3e0b74.webp
+ [2024-11-11 21:04:44,061] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:44,152] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'Which country broke away from Ethiopia in 1991?', 'Answers': ['Eritrea', 'Djibouti', 'South Sudan', 'Somalia'], 'Correct': None}
+ [2024-11-11 21:04:44,153] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:44,153] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 6
+ [2024-11-11 21:04:44,166] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_3376,h_4506/a8c/a8cb5a93f6d36eeef0b01eaa1f3e0b74.webp
+ [2024-11-11 21:04:44,233] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:44,312] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'Which country broke away from Ethiopia in 1991?', 'Answers': ['Eritrea', 'Djibouti', 'South Sudan', 'Somalia'], 'Correct': 0}
+ [2024-11-11 21:04:44,415] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the //button[text()="Next"] element successfully.
+ [2024-11-11 21:04:44,415] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 7
+ [2024-11-11 21:04:44,428] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_3376,h_4506/a8c/a8cb5a93f6d36eeef0b01eaa1f3e0b74.webp
+ [2024-11-11 21:04:45,168] [MainThread] [SeleniumHelpers.py:53] [WARNING ] Stale element reference encountered. Retrying...
+ [2024-11-11 21:04:45,237] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:45,300] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'Sea urchins belong to which marine animal group?', 'Answers': ['Pinnipeds', 'Crustaceans', 'Echinoderms', 'Fissipeds'], 'Correct': None}
+ [2024-11-11 21:04:45,300] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:45,300] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 7
+ [2024-11-11 21:04:45,309] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5184,h_3888/f1f/f1ff8878af0f62a138bc767bca722db2.webp
+ [2024-11-11 21:04:45,378] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:45,462] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'Sea urchins belong to which marine animal group?', 'Answers': ['Pinnipeds', 'Crustaceans', 'Echinoderms', 'Fissipeds'], 'Correct': None}
+ [2024-11-11 21:04:45,462] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:45,462] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 7
+ [2024-11-11 21:04:45,472] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5184,h_3888/f1f/f1ff8878af0f62a138bc767bca722db2.webp
+ [2024-11-11 21:04:45,553] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:45,649] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'Sea urchins belong to which marine animal group?', 'Answers': ['Pinnipeds', 'Crustaceans', 'Echinoderms', 'Fissipeds'], 'Correct': 2}
+ [2024-11-11 21:04:45,743] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the //button[text()="Next"] element successfully.
+ [2024-11-11 21:04:45,744] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 8
+ [2024-11-11 21:04:45,755] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5184,h_3888/f1f/f1ff8878af0f62a138bc767bca722db2.webp
+ [2024-11-11 21:04:46,499] [MainThread] [SeleniumHelpers.py:53] [WARNING ] Stale element reference encountered. Retrying...
+ [2024-11-11 21:04:46,577] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:46,643] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'What is an "Honest John"?', 'Answers': ['A police informant', 'A bar with an honour system', 'A small stove', 'A piece of playground equipment'], 'Correct': None}
+ [2024-11-11 21:04:46,643] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:46,643] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 8
+ [2024-11-11 21:04:46,653] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_6016,h_4016/dbb/dbb8e40a0706f9e3d48139c5bd4d036e.webp
+ [2024-11-11 21:04:46,733] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:46,814] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'What is an "Honest John"?', 'Answers': ['A police informant', 'A bar with an honour system', 'A small stove', 'A piece of playground equipment'], 'Correct': None}
+ [2024-11-11 21:04:46,814] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:46,814] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 8
+ [2024-11-11 21:04:46,824] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_6016,h_4016/dbb/dbb8e40a0706f9e3d48139c5bd4d036e.webp
+ [2024-11-11 21:04:46,892] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:46,970] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'What is an "Honest John"?', 'Answers': ['A police informant', 'A bar with an honour system', 'A small stove', 'A piece of playground equipment'], 'Correct': 1}
+ [2024-11-11 21:04:47,107] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the //button[text()="Next"] element successfully.
+ [2024-11-11 21:04:47,107] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 9
+ [2024-11-11 21:04:47,124] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_6016,h_4016/dbb/dbb8e40a0706f9e3d48139c5bd4d036e.webp
+ [2024-11-11 21:04:47,833] [MainThread] [SeleniumHelpers.py:53] [WARNING ] Stale element reference encountered. Retrying...
+ [2024-11-11 21:04:47,893] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:47,959] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'According to the saying, which city wasn\'t "built in a day"?', 'Answers': ['Paris', 'Rome', 'Tokyo', 'London'], 'Correct': None}
+ [2024-11-11 21:04:47,959] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:47,959] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 9
+ [2024-11-11 21:04:47,970] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_6000,h_4000/e8c/e8c2097eba9fec05080d009177d7c6bf.webp
+ [2024-11-11 21:04:48,043] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:48,135] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'According to the saying, which city wasn\'t "built in a day"?', 'Answers': ['Paris', 'Rome', 'Tokyo', 'London'], 'Correct': None}
+ [2024-11-11 21:04:48,136] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:48,136] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 9
+ [2024-11-11 21:04:48,147] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_6000,h_4000/e8c/e8c2097eba9fec05080d009177d7c6bf.webp
+ [2024-11-11 21:04:48,217] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:48,295] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'According to the saying, which city wasn\'t "built in a day"?', 'Answers': ['Paris', 'Rome', 'Tokyo', 'London'], 'Correct': 1}
+ [2024-11-11 21:04:48,388] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the //button[text()="Next"] element successfully.
+ [2024-11-11 21:04:48,388] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 10
+ [2024-11-11 21:04:48,403] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_6000,h_4000/e8c/e8c2097eba9fec05080d009177d7c6bf.webp
+ [2024-11-11 21:04:49,148] [MainThread] [SeleniumHelpers.py:53] [WARNING ] Stale element reference encountered. Retrying...
+ [2024-11-11 21:04:49,222] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:49,290] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'What produce might be butterhead, iceberg, or romaine?', 'Answers': ['Tomatoes', 'Cucumber', 'Lettuce', 'Potatoes'], 'Correct': None}
+ [2024-11-11 21:04:49,290] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:49,291] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 10
+ [2024-11-11 21:04:49,302] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5330,h_3543/567/567b0cc40cb936f7b67744cf9eb4d4ec.webp
+ [2024-11-11 21:04:49,408] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:49,485] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'What produce might be butterhead, iceberg, or romaine?', 'Answers': ['Tomatoes', 'Cucumber', 'Lettuce', 'Potatoes'], 'Correct': None}
+ [2024-11-11 21:04:49,485] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:49,485] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 10
+ [2024-11-11 21:04:49,498] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5330,h_3543/567/567b0cc40cb936f7b67744cf9eb4d4ec.webp
+ [2024-11-11 21:04:49,586] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:49,677] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'What produce might be butterhead, iceberg, or romaine?', 'Answers': ['Tomatoes', 'Cucumber', 'Lettuce', 'Potatoes'], 'Correct': 2}
+ [2024-11-11 21:04:49,783] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the //button[text()="Next"] element successfully.
+ [2024-11-11 21:04:49,783] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 11
+ [2024-11-11 21:04:49,810] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_5330,h_3543/567/567b0cc40cb936f7b67744cf9eb4d4ec.webp
+ [2024-11-11 21:04:50,539] [MainThread] [SeleniumHelpers.py:53] [WARNING ] Stale element reference encountered. Retrying...
+ [2024-11-11 21:04:50,610] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:50,674] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'What Billy Joel song was inspired by a night out with Christie Brinkley, Whitney Houston and Elle Macpherson?', 'Answers': ["We Didn't Start the Fire", 'Always a Woman', 'Uptown Girl', 'Piano Man'], 'Correct': None}
+ [2024-11-11 21:04:50,674] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:50,674] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 11
+ [2024-11-11 21:04:50,683] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_1931,h_2504/05c/05c06200c6895147e2b4f080a0d6e26c.webp
+ [2024-11-11 21:04:50,749] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:50,823] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'What Billy Joel song was inspired by a night out with Christie Brinkley, Whitney Houston and Elle Macpherson?', 'Answers': ["We Didn't Start the Fire", 'Always a Woman', 'Uptown Girl', 'Piano Man'], 'Correct': None}
+ [2024-11-11 21:04:50,824] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:50,824] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 11
+ [2024-11-11 21:04:50,834] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_1931,h_2504/05c/05c06200c6895147e2b4f080a0d6e26c.webp
+ [2024-11-11 21:04:50,903] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:50,968] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'What Billy Joel song was inspired by a night out with Christie Brinkley, Whitney Houston and Elle Macpherson?', 'Answers': ["We Didn't Start the Fire", 'Always a Woman', 'Uptown Girl', 'Piano Man'], 'Correct': 2}
+ [2024-11-11 21:04:51,062] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the //button[text()="Next"] element successfully.
+ [2024-11-11 21:04:51,062] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 12
+ [2024-11-11 21:04:51,074] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_1931,h_2504/05c/05c06200c6895147e2b4f080a0d6e26c.webp
+ [2024-11-11 21:04:51,780] [MainThread] [SeleniumHelpers.py:53] [WARNING ] Stale element reference encountered. Retrying...
+ [2024-11-11 21:04:51,838] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:51,898] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'According to legend, what kind of animal caused the great Chicago fire of 1871?', 'Answers': ['A goat', 'A duck', 'A cow', 'A cat'], 'Correct': None}
+ [2024-11-11 21:04:51,898] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:51,898] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 12
+ [2024-11-11 21:04:51,907] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_700,h_420/dfa/dfa418d3bc6a1078ceff3925566001c3.webp
+ [2024-11-11 21:04:51,973] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:52,044] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'According to legend, what kind of animal caused the great Chicago fire of 1871?', 'Answers': ['A goat', 'A duck', 'A cow', 'A cat'], 'Correct': None}
+ [2024-11-11 21:04:52,045] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:52,045] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 12
+ [2024-11-11 21:04:52,056] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_700,h_420/dfa/dfa418d3bc6a1078ceff3925566001c3.webp
+ [2024-11-11 21:04:52,124] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:52,194] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'According to legend, what kind of animal caused the great Chicago fire of 1871?', 'Answers': ['A goat', 'A duck', 'A cow', 'A cat'], 'Correct': 2}
+ [2024-11-11 21:04:52,285] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the //button[text()="Next"] element successfully.
+ [2024-11-11 21:04:52,285] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 13
+ [2024-11-11 21:04:52,302] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_700,h_420/dfa/dfa418d3bc6a1078ceff3925566001c3.webp
+ [2024-11-11 21:04:53,012] [MainThread] [SeleniumHelpers.py:53] [WARNING ] Stale element reference encountered. Retrying...
+ [2024-11-11 21:04:53,072] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:53,111] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'How many points are on a single star on the American flag?', 'Answers': ['Six', 'Five'], 'Correct': None}
+ [2024-11-11 21:04:53,111] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:53,111] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 13
+ [2024-11-11 21:04:53,122] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_4592,h_3448/a65/a651ae3cc51eb5930049df804e8bb4a7.webp
+ [2024-11-11 21:04:53,195] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:53,240] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'How many points are on a single star on the American flag?', 'Answers': ['Six', 'Five'], 'Correct': None}
+ [2024-11-11 21:04:53,240] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:53,240] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 13
+ [2024-11-11 21:04:53,253] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_4592,h_3448/a65/a651ae3cc51eb5930049df804e8bb4a7.webp
+ [2024-11-11 21:04:53,335] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:53,379] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'How many points are on a single star on the American flag?', 'Answers': ['Six', 'Five'], 'Correct': None}
+ [2024-11-11 21:04:53,379] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:53,379] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 13
+ [2024-11-11 21:04:53,389] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_4592,h_3448/a65/a651ae3cc51eb5930049df804e8bb4a7.webp
+ [2024-11-11 21:04:53,491] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:53,545] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'How many points are on a single star on the American flag?', 'Answers': ['Six', 'Five'], 'Correct': 1}
+ [2024-11-11 21:04:53,644] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the //button[text()="Next"] element successfully.
+ [2024-11-11 21:04:53,645] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 14
+ [2024-11-11 21:04:53,659] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_4592,h_3448/a65/a651ae3cc51eb5930049df804e8bb4a7.webp
+ [2024-11-11 21:04:54,368] [MainThread] [SeleniumHelpers.py:53] [WARNING ] Stale element reference encountered. Retrying...
+ [2024-11-11 21:04:54,439] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:54,499] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'Bunions affect which body part?', 'Answers': ['Toe', 'Tonsils', 'Tongue', 'Throat'], 'Correct': None}
+ [2024-11-11 21:04:54,499] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:54,499] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 14
+ [2024-11-11 21:04:54,508] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_4752,h_3168/1c7/1c72c92b66e0a66a4fcf0e254f19ae39.webp
+ [2024-11-11 21:04:54,569] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:54,636] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'Bunions affect which body part?', 'Answers': ['Toe', 'Tonsils', 'Tongue', 'Throat'], 'Correct': None}
+ [2024-11-11 21:04:54,636] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:54,636] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 14
+ [2024-11-11 21:04:54,646] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_4752,h_3168/1c7/1c72c92b66e0a66a4fcf0e254f19ae39.webp
+ [2024-11-11 21:04:54,709] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:54,779] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'Bunions affect which body part?', 'Answers': ['Toe', 'Tonsils', 'Tongue', 'Throat'], 'Correct': None}
+ [2024-11-11 21:04:54,779] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:54,779] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 14
+ [2024-11-11 21:04:54,787] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_4752,h_3168/1c7/1c72c92b66e0a66a4fcf0e254f19ae39.webp
+ [2024-11-11 21:04:54,854] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:54,932] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'Bunions affect which body part?', 'Answers': ['Toe', 'Tonsils', 'Tongue', 'Throat'], 'Correct': 0}
+ [2024-11-11 21:04:55,029] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the //button[text()="Next"] element successfully.
+ [2024-11-11 21:04:55,029] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 15
+ [2024-11-11 21:04:55,042] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_4752,h_3168/1c7/1c72c92b66e0a66a4fcf0e254f19ae39.webp
+ [2024-11-11 21:04:55,798] [MainThread] [SeleniumHelpers.py:53] [WARNING ] Stale element reference encountered. Retrying...
+ [2024-11-11 21:04:55,867] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:55,940] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'Actors Nick Offerman and Megan Mullally are ...', 'Answers': ['Cousins', 'Married', 'Brother and sister-in-law', 'Twins'], 'Correct': None}
+ [2024-11-11 21:04:55,940] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:55,940] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 15
+ [2024-11-11 21:04:55,951] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_2000,h_1125/02e/02ee02d40063ae0ce6b9e0c2b0ac3124.webp
+ [2024-11-11 21:04:56,038] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:56,117] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'Actors Nick Offerman and Megan Mullally are ...', 'Answers': ['Cousins', 'Married', 'Brother and sister-in-law', 'Twins'], 'Correct': None}
+ [2024-11-11 21:04:56,118] [MainThread] [QuizBot.py:118] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-11 21:04:56,118] [MainThread] [QuizBot.py:88] [INFO    ] Processing question 15
+ [2024-11-11 21:04:56,127] [MainThread] [QuizBot.py:92] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_2000,h_1125/02e/02ee02d40063ae0ce6b9e0c2b0ac3124.webp
+ [2024-11-11 21:04:56,196] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-11 21:04:56,279] [MainThread] [QuizBot.py:112] [INFO    ] Collected question data: {'Question': 'Actors Nick Offerman and Megan Mullally are ...', 'Answers': ['Cousins', 'Married', 'Brother and sister-in-law', 'Twins'], 'Correct': 1}
+ [2024-11-11 21:04:56,373] [MainThread] [SeleniumHelpers.py:48] [INFO    ] Clicked the //button[text()="Next"] element successfully.
