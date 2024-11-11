@@ -17,7 +17,7 @@ quiz_bot = QuizBot(
     url="https://www.stuff.co.nz/quizzes/350407318/stuff-quiz-morning-trivia-challenge-october-29-2024",
     username="cbriggsnz1977@gmail.com",
     password="?NtLdRR8NQQff$3g",
-    debug=False
+    debug=True
 )
 
 # Run QuizBot to scrape the quiz data
@@ -41,6 +41,6 @@ kahoot_bot = KahootBot(
     quiz_data=quiz_data,
     debug=True
 )
-# kahoot_bot.run()
+kahoot_bot.run()
 
-# driver.quit()
+driver.quit()
