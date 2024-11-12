@@ -7,7 +7,7 @@ from selenium.common.exceptions import (
     NoSuchElementException, NoSuchFrameException, TimeoutException,
     StaleElementReferenceException, ElementNotInteractableException
 )
-from SeleniumHelpers import wait_and_click, wait_and_send_keys, click_with_retry, get_image_url
+from SeleniumHelpers import wait_and_send_keys, click_with_retry, get_image_url, save_image_from_url
 import logging
 
 
@@ -87,10 +87,6 @@ class QuizBot:
         while question_number <= 15:  # Repeat until all 15 questions are completed
             logging.info(f"Processing question {question_number}")
 
-            image_url = get_image_url(self.driver, By.CSS_SELECTOR, "div.image-embed img.img")
-
-            logging.info(f"Image URL = {image_url}")
-
             # Attempt to click the ".choice" button to select an answer
             if not click_with_retry(self.driver, By.CSS_SELECTOR, ".choice", debug=self.debug):
                 logging.warning("Unable to click on a choice button. Exiting current question loop.")
@@ -114,6 +110,10 @@ class QuizBot:
             # Add question dictionary to quiz_list
             if correct_answer is not None:
                 quiz_list.append(question_dict)
+
+                image_url = get_image_url(self.driver, By.CSS_SELECTOR, "div.image-embed img.img")
+                logging.info(f"Image URL = {image_url}")
+                save_image_from_url(image_url, "Images", f"Image {question_number}")
             else:
                 logging.warning("No correct answer found. Reattempting question.")
                 continue

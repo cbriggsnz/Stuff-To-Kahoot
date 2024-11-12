@@ -16,14 +16,6 @@ set_up_logging(
     log_line_template="%(color_on)s [%(asctime)s] [%(threadName)s] [%(filename)s:%(lineno)d] [%(levelname)-8s] %(message)s%(color_off)s",
     datefmt="%Y-%m-%d %H:%M:%S"  # Format as desired
 )
-logging.debug("Debug message")
-logging.info("Info message")
-logging.warning("Warning message")
-logging.error("Error message")
-logging.critical("Critical message")
-
-
-
 
 # Initialize WebDriver in main.py
 options = webdriver.ChromeOptions()

@@ -1,9 +1,12 @@
 # bot_helpers.py
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import ElementClickInterceptedException, StaleElementReferenceException, TimeoutException
+from selenium.common.exceptions import NoSuchElementException, ElementClickInterceptedException, StaleElementReferenceException, TimeoutException
 from datetime import datetime
 import logging
+import requests
+import os
 
 def wait_and_click(driver, locator_type, locator_value, timeout=10, retries=3, debug=False):
     """Waits for an element to be clickable and clicks it, with retries."""
@@ -28,7 +31,9 @@ def wait_and_send_keys(driver, locator_type, locator_value, text, timeout=10, de
     try:
         element = wait.until(EC.visibility_of_element_located((locator_type, locator_value)))
         element.send_keys(text)
-        #logging.info(f"Text '{text}' sent to element with {locator_type}='{locator_value}' successfully.")
+        cleaned_text = text.replace(Keys.ENTER, "") if Keys.ENTER in text else text
+
+        logging.info(f"Text '{cleaned_text}' sent to element with {locator_type}='{locator_value}' successfully.")
     except Exception as e:
         logging.warning(f"Failed to send text to element with {locator_type}='{locator_value}': {e}")
 
@@ -57,14 +62,67 @@ def click_with_retry(driver, locator_type, locator_value, timeout=10, retries=3,
     return False
 
 
+# def get_image_url(driver, locator_type, locator_value):
+#     """Retrieve the image URL from an <img> tag located by the selector."""
+#     try:
+#         # Locate the <img> element
+#         img_element = driver.find_element(locator_type, locator_value)
+#         # Get the src attribute (image URL)
+#         image_url = img_element.get_attribute("src")
+#         return image_url
+#     except Exception as e:
+#         logging.warning(f"Could not retrieve the image URL: {e}")
+#         return None
+
+
 def get_image_url(driver, locator_type, locator_value):
     """Retrieve the image URL from an <img> tag located by the selector."""
     try:
+        img_element = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((locator_type, locator_value))
+        )
         # Locate the <img> element
         img_element = driver.find_element(locator_type, locator_value)
         # Get the src attribute (image URL)
         image_url = img_element.get_attribute("src")
-        return image_url
-    except Exception as e:
-        logging.warning(f"Could not retrieve the image URL: {e}")
+
+        if image_url:
+            return image_url
+        else:
+
+            logging.warning("Image src attribute is missing.")
+            return None
+    except NoSuchElementException:
+        logging.warning(f"Image element with selector '{locator_value}' not found.")
         return None
+
+def save_image_from_url(url, save_dir=".", file_name=None):
+    """Download and save an image from a URL, optionally saving it with a specific name.
+
+    Args:
+        url (str): The URL of the image to download.
+        save_dir (str): The directory where the image should be saved (default is the current directory).
+        file_name (str): Optional. The name to save the image as. If no extension is provided, the original extension from the URL is used.
+    """
+    # Extract the original file extension from the URL
+    original_extension = os.path.splitext(url)[1]
+
+    # Use the original name if no custom file_name is provided
+    if not file_name:
+        file_name = os.path.basename(url)
+    else:
+        # Append the original extension if the file_name doesn't already have one
+        if not os.path.splitext(file_name)[1]:
+            file_name += original_extension
+
+    # Construct the full path to save the image
+    save_path = os.path.join(save_dir, file_name)
+
+    # Download the image
+    response = requests.get(url)
+    if response.status_code == 200:
+        with open(save_path, 'wb') as file:
+            file.write(response.content)
+        print(f"Image saved to {save_path}")
+    else:
+        print("Failed to retrieve the image.")
