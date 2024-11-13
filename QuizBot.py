@@ -12,9 +12,9 @@ import logging
 
 
 class QuizBot:
-    def __init__(self, driver, url, username, password, debug=False):
+    def __init__(self, driver, quiz_type, username, password, debug=False):
         self.driver = driver  # Use the provided driver
-        self.url = url
+        self.quiz_type = quiz_type
         self.username = username
         self.password = password
         self.debug = debug
@@ -128,9 +128,28 @@ class QuizBot:
 
         return quiz_list
 
+    def find_latest_quiz(self):
+        # XPath to select the latest morning quiz
+        latest_morning_quiz_xpath = f'(//a[contains(@href, "/quizzes/") and contains(.//h5, "{self.quiz_type}")])[1]'
+
+        # Wait for the element to appear and click it
+        try:
+            # Wait until the latest morning quiz element is clickable, then click
+            latest_morning_quiz = WebDriverWait(self.driver, 10).until(
+                EC.element_to_be_clickable((By.XPATH, latest_morning_quiz_xpath))
+            )
+            latest_morning_quiz.click()
+            print("Successfully clicked the latest morning quiz.")
+        except Exception as e:
+            print(f"Could not find or click the latest morning quiz: {e}")
+
+
     def run_quiz(self):
+
         """Complete the quiz process from start to finish."""
-        self.open_quiz_page()
+        # self.open_quiz_page()
+        self.driver.get("https://www.stuff.co.nz/quizzes")
+        self.find_latest_quiz()
         self.find_iframe_by_class("stuff-button", retries=16)
         self.driver.switch_to.default_content()
         self.login()

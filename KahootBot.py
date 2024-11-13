@@ -6,8 +6,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import (
     ElementClickInterceptedException, StaleElementReferenceException, TimeoutException
 )
-from SeleniumHelpers import wait_and_click, wait_and_send_keys
+from SeleniumHelpers import wait_and_click, wait_and_send_keys, upload_image, wait_until_element_appears
 import logging
+import time
 class KahootBot:
     def __init__(self, driver, username, password, title, quiz_data, debug=False):
         self.driver = driver  # Use the provided driver
@@ -48,6 +49,22 @@ class KahootBot:
             wait_and_click(self.driver, By.XPATH, f'//button[@aria-label="Toggle answer {question["Correct"] + 1} correct."]',
                                 retries=3)
 
+            wait_and_click(self.driver, By.CSS_SELECTOR, '[data-functional-selector="media-library-info-view__add-media-button"]')
+
+            wait_and_click(self.driver, By.CSS_SELECTOR, '[data-functional-selector="open-upload-media-dialog-button"]')
+
+            upload_image(self.driver, By.CSS_SELECTOR, "input[type='file']#media-upload", f"Images/Image {idx+1}.webp")
+
+            # CSS selector for the div that appears after upload is complete
+            upload_complete_selector = '[data-functional-selector="media-details__with-media"]'
+
+            # Wait until the upload completion div appears
+            if wait_until_element_appears(self.driver, By.CSS_SELECTOR, upload_complete_selector):
+                logging.info("Image upload completed successfully.")
+            else:
+                logging.warning("Image upload did not complete within the expected time.")
+
+            # time.sleep(3)
             if idx < 14:  # Only add "Add question" buttons for the first 14 questions
                 wait_and_click(self.driver, By.CSS_SELECTOR, 'button[data-functional-selector="add-question-button"]')
                 wait_and_click(self.driver, By.CSS_SELECTOR, 'button[data-functional-selector="create-button__quiz"]')

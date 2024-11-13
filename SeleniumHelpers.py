@@ -2,7 +2,7 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import NoSuchElementException, ElementClickInterceptedException, StaleElementReferenceException, TimeoutException
+from selenium.common.exceptions import NoSuchElementException, ElementClickInterceptedException, StaleElementReferenceException, TimeoutException, ElementClickInterceptedException
 from datetime import datetime
 import logging
 import requests
@@ -56,6 +56,8 @@ def click_with_retry(driver, locator_type, locator_value, timeout=10, retries=3,
             logging.warning(f"Timeout: Element {locator_value} not clickable after waiting. Retries left: {retries - attempt - 1}")
         except StaleElementReferenceException:
             logging.warning("Stale element reference encountered. Retrying...")
+        except ElementClickInterceptedException as e:
+            logging.warning("Element click intercepted")
 
     # Final failure message if all retries are exhausted
     logging.error(f"Failed to locate and click the element {locator_value} after {retries} retries.")
@@ -126,3 +128,24 @@ def save_image_from_url(url, save_dir=".", file_name=None):
         print(f"Image saved to {save_path}")
     else:
         print("Failed to retrieve the image.")
+
+def upload_image(driver, locator_type, locator_value, image_path):
+    """Upload an image to the file input field."""
+    image_path = os.path.abspath(image_path)
+    try:
+        # Locate the file input element and send the image path
+        file_input = driver.find_element(locator_type, locator_value)
+        file_input.send_keys(image_path)
+        logging.info(f"Image uploaded from {image_path}")
+    except Exception as e:
+        logging.warning(f"Failed to upload image: {e}")
+
+def wait_until_element_appears(driver, locator_type, locator_value, timeout=10):
+    """Wait until an element appears on the page."""
+    try:
+        WebDriverWait(driver, timeout).until(EC.presence_of_element_located((locator_type, locator_value)))
+        logging.info(f"Element with {locator_type}='{locator_value}' appeared.")
+        return True
+    except TimeoutException:
+        logging.warning(f"Timed out waiting for element with {locator_type}='{locator_value}' to appear.")
+        return False

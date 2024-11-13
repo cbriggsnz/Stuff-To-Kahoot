@@ -28,37 +28,37 @@ driver = webdriver.Chrome(options=options)
 # QuizBot setup and scraping
 quiz_bot = QuizBot(
     driver=driver,  # Pass the driver to QuizBot
-    url="https://www.stuff.co.nz/quizzes/350407318/stuff-quiz-morning-trivia-challenge-october-29-2024",
+    quiz_type = "morning",
     username="cbriggsnz1977@gmail.com",
     password="?NtLdRR8NQQff$3g",
     debug=True
 )
 
 # Run QuizBot to scrape the quiz data
-print("Running Quiz Bot")
+logging.info("Running Quiz Bot")
 quiz = quiz_bot.run_quiz()
 
 #
 #
-# # quiz = {'Title': 'Stuff quiz: Morning trivia challenge: October 29, 2024', 'Quiz_Data': [{'Correct': 1, 'Answers': ['Hack shack', 'Chop shop', 'Whip strip', 'Wreck deck'], 'Question': 'A place where stolen vehicles are dismantled so that the parts can be sold or used to repair other stolen vehicles is called a ...'}, {'Correct': 1, 'Answers': ['Gerald Ford', 'Richard Nixon', 'Lyndon B Johnson', 'Dwight D Eisenhower'], 'Question': 'Which US president was at the centre of the Watergate scandal?'}, {'Correct': 2, 'Answers': ['Rampart', 'Keep', 'Embrasure', 'Portcullis'], 'Question': 'In a medieval castle, what name was given to an opening in the wall from which cannons were fired?'}, {'Correct': 0, 'Answers': ['Eroica', 'Pastorale'], 'Question': "What is the alternate name for Beethoven's Third Symphony?"}, {'Correct': 1, 'Answers': ['Tears', 'Ear wax', 'Urine', 'Stomach acid'], 'Question': 'Cerumen is more commonly known as ...'}, {'Correct': 1, 'Answers': ['Djibouti', 'Eritrea', 'Somalia', 'South Sudan'], 'Question': 'Which country broke away from Ethiopia in 1991?'}, {'Correct': 0, 'Answers': ['Echinoderms', 'Pinnipeds', 'Fissipeds', 'Crustaceans'], 'Question': 'Sea urchins belong to which marine animal group?'}, {'Correct': 2, 'Answers': ['A piece of playground equipment', 'A police informant', 'A bar with an honour system', 'A small stove'], 'Question': 'What is an "Honest John"?'}, {'Correct': 2, 'Answers': ['Paris', 'Tokyo', 'Rome', 'London'], 'Question': 'According to the saying, which city wasn\'t "built in a day"?'}, {'Correct': 0, 'Answers': ['Lettuce', 'Tomatoes', 'Potatoes', 'Cucumber'], 'Question': 'What produce might be butterhead, iceberg, or romaine?'}, {'Correct': 0, 'Answers': ['Uptown Girl', 'Always a Woman', "We Didn't Start the Fire", 'Piano Man'], 'Question': 'What Billy Joel song was inspired by a night out with Christie Brinkley, Whitney Houston and Elle Macpherson?'}, {'Correct': 1, 'Answers': ['A cat', 'A cow', 'A duck', 'A goat'], 'Question': 'According to legend, what kind of animal caused the great Chicago fire of 1871?'}, {'Correct': 0, 'Answers': ['Five', 'Six'], 'Question': 'How many points are on a single star on the American flag?'}, {'Correct': 2, 'Answers': ['Tongue', 'Throat', 'Toe', 'Tonsils'], 'Question': 'Bunions affect which body part?'}, {'Correct': 0, 'Answers': ['Married', 'Brother and sister-in-law', 'Cousins', 'Twins'], 'Question': 'Actors Nick Offerman and Megan Mullally are ...'}]}
+# quiz = {'Title': 'Stuff quiz: Morning trivia challenge: October 29, 2024', 'Quiz_Data': [{'Correct': 1, 'Answers': ['Hack shack', 'Chop shop', 'Whip strip', 'Wreck deck'], 'Question': 'A place where stolen vehicles are dismantled so that the parts can be sold or used to repair other stolen vehicles is called a ...'}, {'Correct': 1, 'Answers': ['Gerald Ford', 'Richard Nixon', 'Lyndon B Johnson', 'Dwight D Eisenhower'], 'Question': 'Which US president was at the centre of the Watergate scandal?'}, {'Correct': 2, 'Answers': ['Rampart', 'Keep', 'Embrasure', 'Portcullis'], 'Question': 'In a medieval castle, what name was given to an opening in the wall from which cannons were fired?'}, {'Correct': 0, 'Answers': ['Eroica', 'Pastorale'], 'Question': "What is the alternate name for Beethoven's Third Symphony?"}, {'Correct': 1, 'Answers': ['Tears', 'Ear wax', 'Urine', 'Stomach acid'], 'Question': 'Cerumen is more commonly known as ...'}, {'Correct': 1, 'Answers': ['Djibouti', 'Eritrea', 'Somalia', 'South Sudan'], 'Question': 'Which country broke away from Ethiopia in 1991?'}, {'Correct': 0, 'Answers': ['Echinoderms', 'Pinnipeds', 'Fissipeds', 'Crustaceans'], 'Question': 'Sea urchins belong to which marine animal group?'}, {'Correct': 2, 'Answers': ['A piece of playground equipment', 'A police informant', 'A bar with an honour system', 'A small stove'], 'Question': 'What is an "Honest John"?'}, {'Correct': 2, 'Answers': ['Paris', 'Tokyo', 'Rome', 'London'], 'Question': 'According to the saying, which city wasn\'t "built in a day"?'}, {'Correct': 0, 'Answers': ['Lettuce', 'Tomatoes', 'Potatoes', 'Cucumber'], 'Question': 'What produce might be butterhead, iceberg, or romaine?'}, {'Correct': 0, 'Answers': ['Uptown Girl', 'Always a Woman', "We Didn't Start the Fire", 'Piano Man'], 'Question': 'What Billy Joel song was inspired by a night out with Christie Brinkley, Whitney Houston and Elle Macpherson?'}, {'Correct': 1, 'Answers': ['A cat', 'A cow', 'A duck', 'A goat'], 'Question': 'According to legend, what kind of animal caused the great Chicago fire of 1871?'}, {'Correct': 0, 'Answers': ['Five', 'Six'], 'Question': 'How many points are on a single star on the American flag?'}, {'Correct': 2, 'Answers': ['Tongue', 'Throat', 'Toe', 'Tonsils'], 'Question': 'Bunions affect which body part?'}, {'Correct': 0, 'Answers': ['Married', 'Brother and sister-in-law', 'Cousins', 'Twins'], 'Question': 'Actors Nick Offerman and Megan Mullally are ...'}]}
 #
 #
 # # KahootBot setup and quiz creation
-# kahoot_username = "mrbriggsteach@gmail.com"
-# kahoot_password = "AiyfqEPC43sNr$@o"
-# quiz_data = quiz["Quiz_Data"]
-# title = quiz["Title"]
-#
+kahoot_username = "mrbriggsteach@gmail.com"
+kahoot_password = "AiyfqEPC43sNr$@o"
+quiz_data = quiz["Quiz_Data"]
+title = quiz["Title"]
 
-# kahoot_bot = KahootBot(
-#     driver=driver,  # Pass the same driver to KahootBot
-#     username=kahoot_username,
-#     password=kahoot_password,
-#     title=title,
-#     quiz_data=quiz_data,
-#     debug=True
-# )
-# kahoot_bot.run()
+
+kahoot_bot = KahootBot(
+    driver=driver,  # Pass the same driver to KahootBot
+    username=kahoot_username,
+    password=kahoot_password,
+    title=title,
+    quiz_data=quiz_data,
+    debug=True
+)
+kahoot_bot.run()
 
 # driver.quit()
 
