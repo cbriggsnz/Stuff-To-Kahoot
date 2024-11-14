@@ -8,7 +8,7 @@ import logging
 import requests
 import os
 
-def wait_and_click(driver, locator_type, locator_value, timeout=10, retries=3, debug=False):
+def wait_and_click(driver, locator_type, locator_value, timeout=10, retries=3):
     """Waits for an element to be clickable and clicks it, with retries."""
     wait = WebDriverWait(driver, timeout)
     for attempt in range(retries):
@@ -25,7 +25,7 @@ def wait_and_click(driver, locator_type, locator_value, timeout=10, retries=3, d
             wait.until(EC.presence_of_element_located((locator_type, locator_value)))
     logging.error(f"Element with {locator_type}='{locator_value}' was not found or clickable after {retries} attempts.")
 
-def wait_and_send_keys(driver, locator_type, locator_value, text, timeout=10, debug=False):
+def wait_and_send_keys(driver, locator_type, locator_value, text, timeout=10):
     """Waits for an element to be visible and sends keys to it."""
     wait = WebDriverWait(driver, timeout)
     try:
@@ -38,7 +38,7 @@ def wait_and_send_keys(driver, locator_type, locator_value, text, timeout=10, de
         logging.warning(f"Failed to send text to element with {locator_type}='{locator_value}': {e}")
 
 
-def click_with_retry(driver, locator_type, locator_value, timeout=10, retries=3, debug=False):
+def click_with_retry(driver, locator_type, locator_value, timeout=10, retries=3):
     """Attempt to click an element with retries, ensuring presence and visibility."""
     wait = WebDriverWait(driver, timeout)
     for attempt in range(retries):
@@ -106,6 +106,12 @@ def save_image_from_url(url, save_dir=".", file_name=None):
         save_dir (str): The directory where the image should be saved (default is the current directory).
         file_name (str): Optional. The name to save the image as. If no extension is provided, the original extension from the URL is used.
     """
+
+    # Check if the URL is None or empty
+    if not url:
+        logging.warning("No valid image URL provided. Skipping image save.")
+        return
+
     # Extract the original file extension from the URL
     original_extension = os.path.splitext(url)[1]
 

@@ -12,12 +12,11 @@ import logging
 
 
 class QuizBot:
-    def __init__(self, driver, quiz_type, username, password, debug=False):
+    def __init__(self, driver, quiz_type, username, password):
         self.driver = driver  # Use the provided driver
         self.quiz_type = quiz_type
         self.username = username
         self.password = password
-        self.debug = debug
         self.wait = WebDriverWait(self.driver, 10)
 
     def open_quiz_page(self):
@@ -41,7 +40,7 @@ class QuizBot:
                     button = self.driver.find_element(By.CLASS_NAME, class_name)
 
                     # Try clicking the button
-                    if button and click_with_retry(self.driver, By.CLASS_NAME, class_name, debug=self.debug):
+                    if button and click_with_retry(self.driver, By.CLASS_NAME, class_name):
                         logging.info(f"Clicked button in iframe {index + 1}")
                         button_clicked = True
                         break
@@ -60,8 +59,8 @@ class QuizBot:
 
     def login(self):
         """Logs in using provided credentials."""
-        wait_and_send_keys(self.driver, By.ID, "signInName", self.username + Keys.ENTER, debug=self.debug)
-        wait_and_send_keys(self.driver, By.ID, "password", self.password + Keys.ENTER, debug=self.debug)
+        wait_and_send_keys(self.driver, By.ID, "signInName", self.username + Keys.ENTER)
+        wait_and_send_keys(self.driver, By.ID, "password", self.password + Keys.ENTER)
 
     def get_quiz_title(self):
         quiz_title = ""
@@ -78,6 +77,24 @@ class QuizBot:
 
         return quiz_title
 
+    def wait_for_answer_explanation_and_collect_answer(self):
+        """Waits for the answer explanation to appear and extracts the correct answer text."""
+        try:
+            # Wait for the answer explanation div to be present on the page
+            explanation_div = self.wait.until(
+                EC.visibility_of_element_located((By.CSS_SELECTOR, ".answer-explanation"))
+            )
+            logging.info("Answer explanation screen appeared.")
+
+            # Extract the answer text from the <p> tag inside the .description div
+            answer_text = explanation_div.find_element(By.CSS_SELECTOR, ".description p").text
+            logging.info(f"Collected correct answer: {answer_text}")
+
+            return answer_text
+        except Exception as e:
+            logging.error(f"Failed to collect answer explanation: {e}")
+            return None
+
 
     def gather_quiz_data(self):
         """Collect quiz data by interacting with each question."""
@@ -88,41 +105,67 @@ class QuizBot:
             logging.info(f"Processing question {question_number}")
 
             # Attempt to click the ".choice" button to select an answer
-            if not click_with_retry(self.driver, By.CSS_SELECTOR, ".choice", debug=self.debug):
-                logging.warning("Unable to click on a choice button. Exiting current question loop.")
-                break  # Exit if unable to click any choice button
+            if click_with_retry(self.driver, By.CSS_SELECTOR, ".choice"):
+                # Gather answers if selection was successful
+                buttons = self.wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".choice-title")))
+                answer_list, correct_answer = [], None
 
-            # Gather answers if selection was successful
-            buttons = self.wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".choice-title")))
-            answer_list, correct_answer = [], None
+                logging.info(f"Found {len(buttons)} of type .choice-title")
 
-            for index, button in enumerate(buttons):
-                answer_text = button.text
-                answer_list.append(answer_text)
-                if button.find_elements(By.CSS_SELECTOR, ".correct"):
-                    correct_answer = index
+                for index, button in enumerate(buttons):
+                    answer_text = button.text
+                    answer_list.append(answer_text)
+                    if button.find_elements(By.CSS_SELECTOR, ".correct"):
+                        correct_answer = index
 
-            question_text = self.wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, ".title"))).text
-            question_dict = {"Question": question_text, "Answers": answer_list, "Correct": correct_answer}
+                question_text = self.wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, ".title"))).text
+                question_dict = {"Type": "multiple-choice", "Question": question_text, "Answers": answer_list, "Correct": correct_answer}
 
-            logging.info(f"Collected question data: {question_dict}")
+                logging.info(f"Collected question data: {question_dict}")
 
-            # Add question dictionary to quiz_list
-            if correct_answer is not None:
-                quiz_list.append(question_dict)
+                # Add question dictionary to quiz_list
+                if correct_answer is not None:
+                    quiz_list.append(question_dict)
 
-                image_url = get_image_url(self.driver, By.CSS_SELECTOR, "div.image-embed img.img")
-                logging.info(f"Image URL = {image_url}")
-                save_image_from_url(image_url, "Images", f"Image {question_number}")
+                    image_url = get_image_url(self.driver, By.CSS_SELECTOR, "div.image-embed img.img")
+                    logging.info(f"Image URL = {image_url}")
+                    save_image_from_url(image_url, "Images", f"Image {question_number}")
+                else:
+                    logging.warning("No correct answer found. Reattempting question.")
+                    continue
+
+                # Attempt to click "Next" button if it exists; exit if click fails
+                if not click_with_retry(self.driver, By.XPATH, '//button[text()="Next"]'):
+                    logging.error("Unable to click 'Next' button. Exiting loop.")
+                    break
+
             else:
-                logging.warning("No correct answer found. Reattempting question.")
-                continue
+                logging.info("Detected text-entry question.")
+                try:
+                    text_entry = self.wait.until(
+                    EC.presence_of_element_located((By.CSS_SELECTOR, ".text-entry-wrapper textarea")))
+                    question_text = self.wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, ".title"))).text
 
-            # Attempt to click "Next" button if it exists; exit if click fails
-            if not click_with_retry(self.driver, By.XPATH, '//button[text()="Next"]', debug=self.debug):
-                logging.error("Unable to click 'Next' button. Exiting loop.")
-                break
+                    # Collect text-entry question data
 
+                    wait_and_send_keys(self.driver, By.CSS_SELECTOR, ".text-entry-wrapper textarea" , " "+ Keys.ENTER)
+                    logging.info(f"Sent a space")
+                    answer = self.wait_for_answer_explanation_and_collect_answer()
+                    question_dict = {
+                        "Type": "text-entry",
+                        "Question": question_text,
+                        "Answer": answer  # Placeholder or actual answer if available
+                    }
+                    quiz_list.append(question_dict)
+                    logging.info(f"Collected text-entry question: {question_dict}")
+                    quiz_list.append(question_dict)
+                    image_url = get_image_url(self.driver, By.CSS_SELECTOR, "div.image-embed img.img")
+                    logging.info(f"Image URL = {image_url}")
+                    save_image_from_url(image_url, "Images", f"Image {question_number}")
+                    click_with_retry(self.driver, By.CSS_SELECTOR, "button[data-test='next-btn']")
+                except Exception as e:
+                    logging.warning(f"Failed to process text-entry question: {e}")
+                    continue  # Skip to the next question if neither type is found
             # Move to the next question only if "Next" was successfully clicked
             question_number += 1
 

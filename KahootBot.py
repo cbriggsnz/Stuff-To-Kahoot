@@ -41,13 +41,17 @@ class KahootBot:
             logging.info(f"Adding question {idx + 1}: {question}")
             wait_and_send_keys(self.driver, By.CSS_SELECTOR, "p[data-placeholder='Start typing your question']",
                                     question["Question"][:120] + Keys.ENTER)
+            if question["Type"] == "multiple-choice":
+                answers = question["Answers"]
+                for i in range(len(answers)):
+                    wait_and_send_keys(self.driver, By.ID, f"question-choice-{i}", answers[i])
 
-            answers = question["Answers"]
-            for i in range(len(answers)):
-                wait_and_send_keys(self.driver, By.ID, f"question-choice-{i}", answers[i])
-
-            wait_and_click(self.driver, By.XPATH, f'//button[@aria-label="Toggle answer {question["Correct"] + 1} correct."]',
+                wait_and_click(self.driver, By.XPATH, f'//button[@aria-label="Toggle answer {question["Correct"] + 1} correct."]',
                                 retries=3)
+
+            elif question["Type"] == "text-entry":
+
+                logging.info("Skipping text question")
 
             wait_and_click(self.driver, By.CSS_SELECTOR, '[data-functional-selector="media-library-info-view__add-media-button"]')
 
