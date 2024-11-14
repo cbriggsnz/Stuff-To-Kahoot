@@ -7,7 +7,7 @@ from selenium.common.exceptions import (
     NoSuchElementException, NoSuchFrameException, TimeoutException,
     StaleElementReferenceException, ElementNotInteractableException
 )
-from SeleniumHelpers import wait_and_send_keys, click_with_retry, get_image_url, save_image_from_url
+from SeleniumHelpers import wait_and_send_keys, click_with_retry, get_image_url_with_retry, save_image_from_url
 import logging
 
 
@@ -59,8 +59,8 @@ class QuizBot:
 
     def login(self):
         """Logs in using provided credentials."""
-        wait_and_send_keys(self.driver, By.ID, "signInName", self.username + Keys.ENTER)
-        wait_and_send_keys(self.driver, By.ID, "password", self.password + Keys.ENTER)
+        wait_and_send_keys(self.driver, By.ID, "signInName", self.username + Keys.ENTER, mask_text=True)
+        wait_and_send_keys(self.driver, By.ID, "password", self.password + Keys.ENTER, mask_text=True)
 
     def get_quiz_title(self):
         quiz_title = ""
@@ -127,7 +127,7 @@ class QuizBot:
                 if correct_answer is not None:
                     quiz_list.append(question_dict)
 
-                    image_url = get_image_url(self.driver, By.CSS_SELECTOR, "div.image-embed img.img")
+                    image_url = get_image_url_with_retry(self.driver, By.CSS_SELECTOR, "div.image-embed img.img")
                     logging.info(f"Image URL = {image_url}")
                     save_image_from_url(image_url, "Images", f"Image {question_number}")
                 else:
@@ -158,8 +158,7 @@ class QuizBot:
                     }
                     quiz_list.append(question_dict)
                     logging.info(f"Collected text-entry question: {question_dict}")
-                    quiz_list.append(question_dict)
-                    image_url = get_image_url(self.driver, By.CSS_SELECTOR, "div.image-embed img.img")
+                    image_url = get_image_url_with_retry(self.driver, By.CSS_SELECTOR, "div.image-embed img.img")
                     logging.info(f"Image URL = {image_url}")
                     save_image_from_url(image_url, "Images", f"Image {question_number}")
                     click_with_retry(self.driver, By.CSS_SELECTOR, "button[data-test='next-btn']")

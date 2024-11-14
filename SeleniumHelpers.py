@@ -7,6 +7,7 @@ from datetime import datetime
 import logging
 import requests
 import os
+import time
 
 def wait_and_click(driver, locator_type, locator_value, timeout=10, retries=3):
     """Waits for an element to be clickable and clicks it, with retries."""
@@ -25,15 +26,16 @@ def wait_and_click(driver, locator_type, locator_value, timeout=10, retries=3):
             wait.until(EC.presence_of_element_located((locator_type, locator_value)))
     logging.error(f"Element with {locator_type}='{locator_value}' was not found or clickable after {retries} attempts.")
 
-def wait_and_send_keys(driver, locator_type, locator_value, text, timeout=10):
+def wait_and_send_keys(driver, locator_type, locator_value, text, timeout=10, mask_text=False):
     """Waits for an element to be visible and sends keys to it."""
     wait = WebDriverWait(driver, timeout)
     try:
         element = wait.until(EC.visibility_of_element_located((locator_type, locator_value)))
         element.send_keys(text)
-        cleaned_text = text.replace(Keys.ENTER, "") if Keys.ENTER in text else text
+        # cleaned_text = text.replace(Keys.ENTER, "") if Keys.ENTER in text else text
+        display_text = "[HIDDEN]" if mask_text else text.replace(Keys.ENTER, "") if Keys.ENTER in text else text
 
-        logging.info(f"Text '{cleaned_text}' sent to element with {locator_type}='{locator_value}' successfully.")
+        logging.info(f"Text '{display_text}' sent to element with {locator_type}='{locator_value}' successfully.")
     except Exception as e:
         logging.warning(f"Failed to send text to element with {locator_type}='{locator_value}': {e}")
 
@@ -155,3 +157,16 @@ def wait_until_element_appears(driver, locator_type, locator_value, timeout=10):
     except TimeoutException:
         logging.warning(f"Timed out waiting for element with {locator_type}='{locator_value}' to appear.")
         return False
+
+def get_image_url_with_retry(driver, locator_type, locator_value, retries=3, delay=1):
+    """Tries to retrieve the image URL, retrying if a StaleElementReferenceException occurs."""
+    for attempt in range(retries):
+        try:
+            img_element = driver.find_element(locator_type, locator_value)
+            image_url = img_element.get_attribute("src")
+            return image_url
+        except StaleElementReferenceException:
+            logging.warning(f"Stale element reference encountered. Retrying... (Attempt {attempt + 1}/{retries})")
+            time.sleep(delay)
+    logging.error("Failed to retrieve image URL after retries.")
+    return None

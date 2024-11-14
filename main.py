@@ -3,8 +3,10 @@ import logging
 from selenium import webdriver
 from QuizBot import QuizBot
 from KahootBot import KahootBot
+from dotenv import load_dotenv
+import os
 
-# fix error with sending text passwords
+
 
 set_up_logging(
     console_log_output="stdout",
@@ -25,26 +27,33 @@ options.add_experimental_option("detach", True)  # Keep Chrome open after script
 
 driver = webdriver.Chrome(options=options)
 
+# Load environment variables from .env file
+load_dotenv()
+
+# Retrieve credentials
+quiz_username = os.getenv("QUIZ_USERNAME")
+quiz_password = os.getenv("QUIZ_PASSWORD")
+kahoot_username = os.getenv("KAHOOT_USERNAME")
+kahoot_password = os.getenv("KAHOOT_PASSWORD")
+
 # QuizBot setup and scraping
 quiz_bot = QuizBot(
     driver=driver,  # Pass the driver to QuizBot
     quiz_type = "morning",
-    username="cbriggsnz1977@gmail.com",
-    password="?NtLdRR8NQQff$3g"
+    username=quiz_username,
+    password=quiz_password
 )
 
 # Run QuizBot to scrape the quiz data
 logging.info("Running Quiz Bot")
-# quiz = quiz_bot.run_quiz()
-# print(quiz)
+quiz = quiz_bot.run_quiz()
+logging.info(quiz)
 #
 #
-quiz = {'Title': 'Stuff quiz: Morning trivia challenge: November 14, 2024', 'Quiz_Data': [{'Type': 'multiple-choice', 'Question': 'Which drink is distilled from the agave plant?', 'Answers': ['Tequila', 'White rum', 'Gin', 'Vodka'], 'Correct': 0}, {'Type': 'multiple-choice', 'Question': 'What name was given to German submarines in World War II?', 'Answers': ['Q-boat', 'U-boat', 'T-boat', 'M-boat'], 'Correct': 1}, {'Type': 'multiple-choice', 'Question': 'Which African nation was once led by Idi Amin?', 'Answers': ['Zimbabwe', 'Uganda', 'Somalia', 'Kenya'], 'Correct': 1}, {'Type': 'text-entry', 'Question': 'Which name is given to the art of ornamental tree-shaping?', 'Answer': 'Topiary'}, {'Type': 'text-entry', 'Question': 'Which name is given to the art of ornamental tree-shaping?', 'Answer': 'Topiary'}, {'Type': 'multiple-choice', 'Question': 'A simple story with a moral is known as a ...', 'Answers': ['Riddle', 'Fan-fiction', 'Folklore', 'Fable'], 'Correct': 3}, {'Type': 'multiple-choice', 'Question': 'Terry Gene Bollea is better known as ...', 'Answers': ['Rey Mysterio', 'John Cena', 'Randy Savage', 'Hulk Hogan'], 'Correct': 3}, {'Type': 'multiple-choice', 'Question': 'The female organ of a flower is the ...', 'Answers': ['Stamen', 'Pistil'], 'Correct': 1}, {'Type': 'multiple-choice', 'Question': 'The Plains of Abraham is a reserve in ...', 'Answers': ['Qingdao', 'Quito', 'Quebec', 'Queenstown'], 'Correct': 2}, {'Type': 'multiple-choice', 'Question': 'Which musical term means "very softly"?', 'Answers': ['Cadenza', 'Diminuendo', 'Pianissimo', 'Allegro'], 'Correct': 2}, {'Type': 'multiple-choice', 'Question': 'The term pulmonary relates to the ...', 'Answers': ['Heart', 'Lungs', 'Throat', 'Sinuses'], 'Correct': 1}, {'Type': 'multiple-choice', 'Question': 'Which Jewish festival falls 50 days after Passover?', 'Answers': ['Shavuot', 'Pentecost', 'Rosh Hashanah', 'Sukkot'], 'Correct': 0}, {'Type': 'multiple-choice', 'Question': 'The South American Pampas are ...', 'Answers': ['Rocky cliffs', 'Grass plains', 'Salt flats', 'Deserts'], 'Correct': 1}, {'Type': 'multiple-choice', 'Question': 'A baby turkey is called a ...', 'Answers': ['Poult', 'Turkling', 'Chick', 'Tucklet'], 'Correct': 0}, {'Type': 'multiple-choice', 'Question': 'Which of these is a ring-toss game?', 'Answers': ['Quoits', 'Bocce', 'Croquet', 'Lacrosse'], 'Correct': 0}, {'Type': 'multiple-choice', 'Question': 'Good King Wenceslas was the duke of ...', 'Answers': ['Bohemia', 'Edinburgh', 'Somerset', 'Arabia'], 'Correct': 0}]}
+# quiz = {'Title': 'Stuff quiz: Morning trivia challenge: November 14, 2024', 'Quiz_Data': [{'Type': 'multiple-choice', 'Question': 'Which drink is distilled from the agave plant?', 'Answers': ['Vodka', 'Tequila', 'Gin', 'White rum'], 'Correct': 1}, {'Type': 'multiple-choice', 'Question': 'What name was given to German submarines in World War II?', 'Answers': ['T-boat', 'Q-boat', 'M-boat', 'U-boat'], 'Correct': 3}, {'Type': 'multiple-choice', 'Question': 'Which African nation was once led by Idi Amin?', 'Answers': ['Zimbabwe', 'Kenya', 'Somalia', 'Uganda'], 'Correct': 3}, {'Type': 'text-entry', 'Question': 'Which name is given to the art of ornamental tree-shaping?', 'Answer': 'Topiary'}, {'Type': 'multiple-choice', 'Question': 'A simple story with a moral is known as a ...', 'Answers': ['Riddle', 'Fable', 'Folklore', 'Fan-fiction'], 'Correct': 1}, {'Type': 'multiple-choice', 'Question': 'Terry Gene Bollea is better known as ...', 'Answers': ['Hulk Hogan', 'Rey Mysterio', 'Randy Savage', 'John Cena'], 'Correct': 0}, {'Type': 'multiple-choice', 'Question': 'The female organ of a flower is the ...', 'Answers': ['Stamen', 'Pistil'], 'Correct': 1}, {'Type': 'multiple-choice', 'Question': 'The Plains of Abraham is a reserve in ...', 'Answers': ['Quito', 'Queenstown', 'Quebec', 'Qingdao'], 'Correct': 2}, {'Type': 'multiple-choice', 'Question': 'Which musical term means "very softly"?', 'Answers': ['Diminuendo', 'Allegro', 'Cadenza', 'Pianissimo'], 'Correct': 3}, {'Type': 'multiple-choice', 'Question': 'The term pulmonary relates to the ...', 'Answers': ['Throat', 'Heart', 'Lungs', 'Sinuses'], 'Correct': 2}, {'Type': 'multiple-choice', 'Question': 'Which Jewish festival falls 50 days after Passover?', 'Answers': ['Pentecost', 'Rosh Hashanah', 'Sukkot', 'Shavuot'], 'Correct': 3}, {'Type': 'multiple-choice', 'Question': 'The South American Pampas are ...', 'Answers': ['Grass plains', 'Rocky cliffs', 'Salt flats', 'Deserts'], 'Correct': 0}, {'Type': 'multiple-choice', 'Question': 'A baby turkey is called a ...', 'Answers': ['Chick', 'Turkling', 'Tucklet', 'Poult'], 'Correct': 3}, {'Type': 'multiple-choice', 'Question': 'Which of these is a ring-toss game?', 'Answers': ['Croquet', 'Lacrosse', 'Quoits', 'Bocce'], 'Correct': 2}, {'Type': 'multiple-choice', 'Question': 'Good King Wenceslas was the duke of ...', 'Answers': ['Edinburgh', 'Bohemia', 'Arabia', 'Somerset'], 'Correct': 1}]}
 
 #
 # # KahootBot setup and quiz creation
-kahoot_username = "mrbriggsteach@gmail.com"
-kahoot_password = "AiyfqEPC43sNr$@o"
 quiz_data = quiz["Quiz_Data"]
 title = quiz["Title"]
 
