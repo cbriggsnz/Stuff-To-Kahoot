@@ -14849,3 +14849,262 @@ Stacktrace:
 	BaseThreadInitThunk [0x00007FF91C04259D+29]
 	RtlUserThreadStart [0x00007FF91D70AF38+40]
 
+
+==================================================
+New logging session started: 2024-11-16 20:05:42
+==================================================
+
+==================================================
+New logging session started: 2024-11-16 20:05:42
+==================================================
+ [2024-11-16 20:05:44,596] [MainThread] [main.py:89] [INFO    ] Running Quiz Bot
+ [2024-11-16 20:05:44,615] [MainThread] [main.py:89] [INFO    ] Running Quiz Bot
+ [2024-11-16 20:05:45,651] [MainThread] [main.py:131] [ERROR   ] An unexpected error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6123D38A5+3004357]
+	(No symbol) [0x00007FF612069970]
+	(No symbol) [0x00007FF611F1582A]
+	(No symbol) [0x00007FF611EEFA75]
+	(No symbol) [0x00007FF611F92C77]
+	(No symbol) [0x00007FF611FAB351]
+	(No symbol) [0x00007FF611F8B983]
+	(No symbol) [0x00007FF611F57628]
+	(No symbol) [0x00007FF611F58791]
+	GetHandleVerifier [0x00007FF6123FA00D+3161901]
+	GetHandleVerifier [0x00007FF61244E060+3506048]
+	GetHandleVerifier [0x00007FF61244400D+3465005]
+	GetHandleVerifier [0x00007FF6121C0EEB+830987]
+	(No symbol) [0x00007FF61207467F]
+	(No symbol) [0x00007FF6120709D4]
+	(No symbol) [0x00007FF612070B6D]
+	(No symbol) [0x00007FF612060149]
+	BaseThreadInitThunk [0x00007FF949B2259D+29]
+	RtlUserThreadStart [0x00007FF94BDCAF38+40]
+
+ [2024-11-16 20:05:47,213] [MainThread] [main.py:131] [ERROR   ] An unexpected error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6123D38A5+3004357]
+	(No symbol) [0x00007FF612069970]
+	(No symbol) [0x00007FF611F1582A]
+	(No symbol) [0x00007FF611EEFA75]
+	(No symbol) [0x00007FF611F92C77]
+	(No symbol) [0x00007FF611FAB351]
+	(No symbol) [0x00007FF611F8B983]
+	(No symbol) [0x00007FF611F57628]
+	(No symbol) [0x00007FF611F58791]
+	GetHandleVerifier [0x00007FF6123FA00D+3161901]
+	GetHandleVerifier [0x00007FF61244E060+3506048]
+	GetHandleVerifier [0x00007FF61244400D+3465005]
+	GetHandleVerifier [0x00007FF6121C0EEB+830987]
+	(No symbol) [0x00007FF61207467F]
+	(No symbol) [0x00007FF6120709D4]
+	(No symbol) [0x00007FF612070B6D]
+	(No symbol) [0x00007FF612060149]
+	BaseThreadInitThunk [0x00007FF949B2259D+29]
+	RtlUserThreadStart [0x00007FF94BDCAF38+40]
+
+
+==================================================
+New logging session started: 2024-11-16 20:19:31
+==================================================
+ [2024-11-16 20:19:33,536] [MainThread] [main.py:89] [INFO    ] Running Quiz Bot
+ [2024-11-16 20:19:36,245] [MainThread] [QuizBot.py:34] [INFO    ] Found 9 iframes on this retry. 16 retries left.
+ [2024-11-16 20:19:36,559] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-16 20:19:36,582] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-16 20:19:36,602] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-16 20:19:36,624] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-16 20:19:36,645] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-16 20:19:36,664] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 6. Retrying next iframe.
+ [2024-11-16 20:19:36,684] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 7. Retrying next iframe.
+ [2024-11-16 20:19:36,702] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 8. Retrying next iframe.
+ [2024-11-16 20:19:36,721] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 9. Retrying next iframe.
+ [2024-11-16 20:19:36,730] [MainThread] [QuizBot.py:34] [INFO    ] Found 13 iframes on this retry. 16 retries left.
+ [2024-11-16 20:19:36,763] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-16 20:19:36,785] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-16 20:19:36,817] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-16 20:19:36,844] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-16 20:19:36,929] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-16 20:19:36,983] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 6. Retrying next iframe.
+ [2024-11-16 20:19:37,004] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 7. Retrying next iframe.
+ [2024-11-16 20:19:37,023] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 8. Retrying next iframe.
+ [2024-11-16 20:19:37,053] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 9. Retrying next iframe.
+ [2024-11-16 20:19:37,096] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 10. Retrying next iframe.
+ [2024-11-16 20:19:37,130] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 11. Retrying next iframe.
+ [2024-11-16 20:19:37,155] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 12. Retrying next iframe.
+ [2024-11-16 20:19:37,175] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 13. Retrying next iframe.
+ [2024-11-16 20:19:37,185] [MainThread] [QuizBot.py:34] [INFO    ] Found 15 iframes on this retry. 16 retries left.
+ [2024-11-16 20:19:37,221] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-16 20:19:37,249] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-16 20:19:37,276] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-16 20:19:37,302] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-16 20:19:37,363] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-16 20:19:37,383] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 6. Retrying next iframe.
+ [2024-11-16 20:19:37,405] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 7. Retrying next iframe.
+ [2024-11-16 20:19:37,427] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 8. Retrying next iframe.
+ [2024-11-16 20:19:37,455] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 9. Retrying next iframe.
+ [2024-11-16 20:19:37,476] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 10. Retrying next iframe.
+ [2024-11-16 20:19:37,499] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 11. Retrying next iframe.
+ [2024-11-16 20:19:37,520] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 12. Retrying next iframe.
+ [2024-11-16 20:19:37,539] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 13. Retrying next iframe.
+ [2024-11-16 20:19:37,656] [MainThread] [SeleniumHelpers.py:55] [INFO    ] Clicked the stuff-button element successfully.
+ [2024-11-16 20:19:37,656] [MainThread] [QuizBot.py:44] [INFO    ] Clicked button in iframe 14
+ [2024-11-16 20:19:40,490] [MainThread] [SeleniumHelpers.py:38] [INFO    ] Text '[HIDDEN]' sent to element with id='signInName' successfully.
+ [2024-11-16 20:19:40,550] [MainThread] [SeleniumHelpers.py:38] [INFO    ] Text '[HIDDEN]' sent to element with id='password' successfully.
+ [2024-11-16 20:19:41,893] [MainThread] [QuizBot.py:34] [INFO    ] Found 5 iframes on this retry. 16 retries left.
+ [2024-11-16 20:19:42,214] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-16 20:19:42,244] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-16 20:19:42,284] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-16 20:19:42,306] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-16 20:19:42,340] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-16 20:19:42,350] [MainThread] [QuizBot.py:34] [INFO    ] Found 10 iframes on this retry. 16 retries left.
+ [2024-11-16 20:19:42,400] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 1. Retrying next iframe.
+ [2024-11-16 20:19:42,467] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 2. Retrying next iframe.
+ [2024-11-16 20:19:42,493] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 3. Retrying next iframe.
+ [2024-11-16 20:19:42,513] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 4. Retrying next iframe.
+ [2024-11-16 20:19:42,532] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 5. Retrying next iframe.
+ [2024-11-16 20:19:42,552] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 6. Retrying next iframe.
+ [2024-11-16 20:19:42,572] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 7. Retrying next iframe.
+ [2024-11-16 20:19:42,591] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 8. Retrying next iframe.
+ [2024-11-16 20:19:42,614] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 9. Retrying next iframe.
+ [2024-11-16 20:19:42,635] [MainThread] [QuizBot.py:49] [WARNING ] Error accessing button in iframe 10. Retrying next iframe.
+ [2024-11-16 20:19:42,643] [MainThread] [QuizBot.py:34] [INFO    ] Found 11 iframes on this retry. 16 retries left.
+ [2024-11-16 20:19:42,820] [MainThread] [SeleniumHelpers.py:55] [INFO    ] Clicked the block-nav element successfully.
+ [2024-11-16 20:19:42,820] [MainThread] [QuizBot.py:44] [INFO    ] Clicked button in iframe 1
+ [2024-11-16 20:19:42,821] [MainThread] [QuizBot.py:105] [INFO    ] Processing question 1
+ [2024-11-16 20:19:42,950] [MainThread] [SeleniumHelpers.py:55] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-16 20:19:42,959] [MainThread] [QuizBot.py:113] [INFO    ] Found 4 of type .choice-title
+ [2024-11-16 20:19:43,023] [MainThread] [QuizBot.py:124] [INFO    ] Collected question data: {'Type': 'multiple-choice', 'Question': 'The phrase, "yeah, right" is associated with which beer brand?', 'Answers': ['Steinlager', "Monteith's", 'Speights', 'Tui'], 'Correct': None}
+ [2024-11-16 20:19:43,023] [MainThread] [QuizBot.py:134] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-16 20:19:43,023] [MainThread] [QuizBot.py:105] [INFO    ] Processing question 1
+ [2024-11-16 20:19:43,087] [MainThread] [SeleniumHelpers.py:55] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-16 20:19:43,093] [MainThread] [QuizBot.py:113] [INFO    ] Found 4 of type .choice-title
+ [2024-11-16 20:19:43,143] [MainThread] [QuizBot.py:124] [INFO    ] Collected question data: {'Type': 'multiple-choice', 'Question': 'The phrase, "yeah, right" is associated with which beer brand?', 'Answers': ['Steinlager', "Monteith's", 'Speights', 'Tui'], 'Correct': None}
+ [2024-11-16 20:19:43,144] [MainThread] [QuizBot.py:134] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-16 20:19:43,144] [MainThread] [QuizBot.py:105] [INFO    ] Processing question 1
+ [2024-11-16 20:19:43,222] [MainThread] [SeleniumHelpers.py:55] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-16 20:19:43,245] [MainThread] [QuizBot.py:113] [INFO    ] Found 4 of type .choice-title
+ [2024-11-16 20:19:43,318] [MainThread] [QuizBot.py:124] [INFO    ] Collected question data: {'Type': 'multiple-choice', 'Question': 'The phrase, "yeah, right" is associated with which beer brand?', 'Answers': ['Steinlager', "Monteith's", 'Speights', 'Tui'], 'Correct': None}
+ [2024-11-16 20:19:43,319] [MainThread] [QuizBot.py:134] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-16 20:19:43,319] [MainThread] [QuizBot.py:105] [INFO    ] Processing question 1
+ [2024-11-16 20:19:43,383] [MainThread] [SeleniumHelpers.py:55] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-16 20:19:43,389] [MainThread] [QuizBot.py:113] [INFO    ] Found 4 of type .choice-title
+ [2024-11-16 20:19:43,494] [MainThread] [QuizBot.py:124] [INFO    ] Collected question data: {'Type': 'multiple-choice', 'Question': 'The phrase, "yeah, right" is associated with which beer brand?', 'Answers': ['Steinlager', "Monteith's", 'Speights', 'Tui'], 'Correct': None}
+ [2024-11-16 20:19:43,494] [MainThread] [QuizBot.py:134] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-16 20:19:43,494] [MainThread] [QuizBot.py:105] [INFO    ] Processing question 1
+ [2024-11-16 20:19:43,578] [MainThread] [SeleniumHelpers.py:55] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-16 20:19:43,583] [MainThread] [QuizBot.py:113] [INFO    ] Found 4 of type .choice-title
+ [2024-11-16 20:19:43,639] [MainThread] [QuizBot.py:124] [INFO    ] Collected question data: {'Type': 'multiple-choice', 'Question': 'The phrase, "yeah, right" is associated with which beer brand?', 'Answers': ['Steinlager', "Monteith's", 'Speights', 'Tui'], 'Correct': None}
+ [2024-11-16 20:19:43,639] [MainThread] [QuizBot.py:134] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-16 20:19:43,639] [MainThread] [QuizBot.py:105] [INFO    ] Processing question 1
+ [2024-11-16 20:19:43,803] [MainThread] [SeleniumHelpers.py:55] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-16 20:19:43,809] [MainThread] [QuizBot.py:113] [INFO    ] Found 4 of type .choice-title
+ [2024-11-16 20:19:43,891] [MainThread] [QuizBot.py:124] [INFO    ] Collected question data: {'Type': 'multiple-choice', 'Question': 'The phrase, "yeah, right" is associated with which beer brand?', 'Answers': ['Steinlager', "Monteith's", 'Speights', 'Tui'], 'Correct': None}
+ [2024-11-16 20:19:43,892] [MainThread] [QuizBot.py:134] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-16 20:19:43,892] [MainThread] [QuizBot.py:105] [INFO    ] Processing question 1
+ [2024-11-16 20:19:44,027] [MainThread] [SeleniumHelpers.py:55] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-16 20:19:44,037] [MainThread] [QuizBot.py:113] [INFO    ] Found 4 of type .choice-title
+ [2024-11-16 20:19:44,116] [MainThread] [QuizBot.py:124] [INFO    ] Collected question data: {'Type': 'multiple-choice', 'Question': 'The phrase, "yeah, right" is associated with which beer brand?', 'Answers': ['Steinlager', "Monteith's", 'Speights', 'Tui'], 'Correct': None}
+ [2024-11-16 20:19:44,117] [MainThread] [QuizBot.py:134] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-16 20:19:44,117] [MainThread] [QuizBot.py:105] [INFO    ] Processing question 1
+ [2024-11-16 20:19:44,232] [MainThread] [SeleniumHelpers.py:55] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-16 20:19:44,240] [MainThread] [QuizBot.py:113] [INFO    ] Found 4 of type .choice-title
+ [2024-11-16 20:19:44,355] [MainThread] [QuizBot.py:124] [INFO    ] Collected question data: {'Type': 'multiple-choice', 'Question': 'The phrase, "yeah, right" is associated with which beer brand?', 'Answers': ['Steinlager', "Monteith's", 'Speights', 'Tui'], 'Correct': None}
+ [2024-11-16 20:19:44,355] [MainThread] [QuizBot.py:134] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-16 20:19:44,355] [MainThread] [QuizBot.py:105] [INFO    ] Processing question 1
+ [2024-11-16 20:19:44,455] [MainThread] [SeleniumHelpers.py:55] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-16 20:19:44,466] [MainThread] [QuizBot.py:113] [INFO    ] Found 4 of type .choice-title
+ [2024-11-16 20:19:44,650] [MainThread] [QuizBot.py:124] [INFO    ] Collected question data: {'Type': 'multiple-choice', 'Question': 'The phrase, "yeah, right" is associated with which beer brand?', 'Answers': ['Steinlager', "Monteith's", 'Speights', 'Tui'], 'Correct': None}
+ [2024-11-16 20:19:44,650] [MainThread] [QuizBot.py:134] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-16 20:19:44,650] [MainThread] [QuizBot.py:105] [INFO    ] Processing question 1
+ [2024-11-16 20:19:44,949] [MainThread] [SeleniumHelpers.py:55] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-16 20:19:44,961] [MainThread] [QuizBot.py:113] [INFO    ] Found 4 of type .choice-title
+ [2024-11-16 20:19:45,022] [MainThread] [QuizBot.py:124] [INFO    ] Collected question data: {'Type': 'multiple-choice', 'Question': 'The phrase, "yeah, right" is associated with which beer brand?', 'Answers': ['Steinlager', "Monteith's", 'Speights', 'Tui'], 'Correct': None}
+ [2024-11-16 20:19:45,023] [MainThread] [QuizBot.py:134] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-16 20:19:45,023] [MainThread] [QuizBot.py:105] [INFO    ] Processing question 1
+ [2024-11-16 20:19:45,102] [MainThread] [SeleniumHelpers.py:55] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-16 20:19:45,109] [MainThread] [QuizBot.py:113] [INFO    ] Found 4 of type .choice-title
+ [2024-11-16 20:19:45,169] [MainThread] [QuizBot.py:124] [INFO    ] Collected question data: {'Type': 'multiple-choice', 'Question': 'The phrase, "yeah, right" is associated with which beer brand?', 'Answers': ['Steinlager', "Monteith's", 'Speights', 'Tui'], 'Correct': 3}
+ [2024-11-16 20:19:45,185] [MainThread] [QuizBot.py:131] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_3456,h_5184/a70/a70cb17b7e0d8fc72ad7d0343524d997.webp
+ [2024-11-16 20:19:46,624] [MainThread] [SeleniumHelpers.py:143] [INFO    ] Image saved to Images\Image 1.webp
+ [2024-11-16 20:19:46,715] [MainThread] [SeleniumHelpers.py:55] [INFO    ] Clicked the //button[text()="Next"] element successfully.
+ [2024-11-16 20:19:46,715] [MainThread] [QuizBot.py:105] [INFO    ] Processing question 2
+ [2024-11-16 20:19:47,477] [MainThread] [SeleniumHelpers.py:60] [WARNING ] Stale element reference encountered. Retrying...
+ [2024-11-16 20:19:47,561] [MainThread] [SeleniumHelpers.py:55] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-16 20:19:47,568] [MainThread] [QuizBot.py:113] [INFO    ] Found 4 of type .choice-title
+ [2024-11-16 20:19:47,631] [MainThread] [QuizBot.py:124] [INFO    ] Collected question data: {'Type': 'multiple-choice', 'Question': 'Which of these was popularised by Frank Ifield?', 'Answers': ['Yodelling', 'Beatboxing', 'Vibrato', 'A capella'], 'Correct': None}
+ [2024-11-16 20:19:47,631] [MainThread] [QuizBot.py:134] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-16 20:19:47,631] [MainThread] [QuizBot.py:105] [INFO    ] Processing question 2
+ [2024-11-16 20:19:47,709] [MainThread] [SeleniumHelpers.py:55] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-16 20:19:47,716] [MainThread] [QuizBot.py:113] [INFO    ] Found 4 of type .choice-title
+ [2024-11-16 20:19:47,784] [MainThread] [QuizBot.py:124] [INFO    ] Collected question data: {'Type': 'multiple-choice', 'Question': 'Which of these was popularised by Frank Ifield?', 'Answers': ['Yodelling', 'Beatboxing', 'Vibrato', 'A capella'], 'Correct': None}
+ [2024-11-16 20:19:47,784] [MainThread] [QuizBot.py:134] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-16 20:19:47,784] [MainThread] [QuizBot.py:105] [INFO    ] Processing question 2
+ [2024-11-16 20:19:47,858] [MainThread] [SeleniumHelpers.py:55] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-16 20:19:47,864] [MainThread] [QuizBot.py:113] [INFO    ] Found 4 of type .choice-title
+ [2024-11-16 20:19:47,962] [MainThread] [QuizBot.py:124] [INFO    ] Collected question data: {'Type': 'multiple-choice', 'Question': 'Which of these was popularised by Frank Ifield?', 'Answers': ['Yodelling', 'Beatboxing', 'Vibrato', 'A capella'], 'Correct': None}
+ [2024-11-16 20:19:47,962] [MainThread] [QuizBot.py:134] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-16 20:19:47,962] [MainThread] [QuizBot.py:105] [INFO    ] Processing question 2
+ [2024-11-16 20:19:48,042] [MainThread] [SeleniumHelpers.py:55] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-16 20:19:48,048] [MainThread] [QuizBot.py:113] [INFO    ] Found 4 of type .choice-title
+ [2024-11-16 20:19:48,107] [MainThread] [QuizBot.py:124] [INFO    ] Collected question data: {'Type': 'multiple-choice', 'Question': 'Which of these was popularised by Frank Ifield?', 'Answers': ['Yodelling', 'Beatboxing', 'Vibrato', 'A capella'], 'Correct': 0}
+ [2024-11-16 20:19:48,118] [MainThread] [QuizBot.py:131] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_3881,h_5821/65d/65db7668792f53072330d178d54d16d0.webp
+ [2024-11-16 20:19:49,242] [MainThread] [SeleniumHelpers.py:143] [INFO    ] Image saved to Images\Image 2.webp
+ [2024-11-16 20:19:49,328] [MainThread] [SeleniumHelpers.py:55] [INFO    ] Clicked the //button[text()="Next"] element successfully.
+ [2024-11-16 20:19:49,328] [MainThread] [QuizBot.py:105] [INFO    ] Processing question 3
+ [2024-11-16 20:19:50,039] [MainThread] [SeleniumHelpers.py:60] [WARNING ] Stale element reference encountered. Retrying...
+ [2024-11-16 20:19:50,111] [MainThread] [SeleniumHelpers.py:55] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-16 20:19:50,116] [MainThread] [QuizBot.py:113] [INFO    ] Found 4 of type .choice-title
+ [2024-11-16 20:19:50,173] [MainThread] [QuizBot.py:124] [INFO    ] Collected question data: {'Type': 'multiple-choice', 'Question': 'Eddie Murphy played Sherman Klump in ...', 'Answers': ['The Nutty Professor', 'Coming to America', 'Dr Doolittle', 'Boomerang'], 'Correct': None}
+ [2024-11-16 20:19:50,173] [MainThread] [QuizBot.py:134] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-16 20:19:50,173] [MainThread] [QuizBot.py:105] [INFO    ] Processing question 3
+ [2024-11-16 20:19:50,241] [MainThread] [SeleniumHelpers.py:55] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-16 20:19:50,248] [MainThread] [QuizBot.py:113] [INFO    ] Found 4 of type .choice-title
+ [2024-11-16 20:19:50,316] [MainThread] [QuizBot.py:124] [INFO    ] Collected question data: {'Type': 'multiple-choice', 'Question': 'Eddie Murphy played Sherman Klump in ...', 'Answers': ['The Nutty Professor', 'Coming to America', 'Dr Doolittle', 'Boomerang'], 'Correct': None}
+ [2024-11-16 20:19:50,316] [MainThread] [QuizBot.py:134] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-16 20:19:50,316] [MainThread] [QuizBot.py:105] [INFO    ] Processing question 3
+ [2024-11-16 20:19:50,383] [MainThread] [SeleniumHelpers.py:55] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-16 20:19:50,389] [MainThread] [QuizBot.py:113] [INFO    ] Found 4 of type .choice-title
+ [2024-11-16 20:19:50,440] [MainThread] [QuizBot.py:124] [INFO    ] Collected question data: {'Type': 'multiple-choice', 'Question': 'Eddie Murphy played Sherman Klump in ...', 'Answers': ['The Nutty Professor', 'Coming to America', 'Dr Doolittle', 'Boomerang'], 'Correct': None}
+ [2024-11-16 20:19:50,440] [MainThread] [QuizBot.py:134] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-16 20:19:50,440] [MainThread] [QuizBot.py:105] [INFO    ] Processing question 3
+ [2024-11-16 20:19:50,501] [MainThread] [SeleniumHelpers.py:55] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-16 20:19:50,506] [MainThread] [QuizBot.py:113] [INFO    ] Found 4 of type .choice-title
+ [2024-11-16 20:19:50,557] [MainThread] [QuizBot.py:124] [INFO    ] Collected question data: {'Type': 'multiple-choice', 'Question': 'Eddie Murphy played Sherman Klump in ...', 'Answers': ['The Nutty Professor', 'Coming to America', 'Dr Doolittle', 'Boomerang'], 'Correct': None}
+ [2024-11-16 20:19:50,557] [MainThread] [QuizBot.py:134] [WARNING ] No correct answer found. Reattempting question.
+ [2024-11-16 20:19:50,557] [MainThread] [QuizBot.py:105] [INFO    ] Processing question 3
+ [2024-11-16 20:19:50,632] [MainThread] [SeleniumHelpers.py:55] [INFO    ] Clicked the .choice element successfully.
+ [2024-11-16 20:19:50,639] [MainThread] [QuizBot.py:113] [INFO    ] Found 4 of type .choice-title
+ [2024-11-16 20:19:50,699] [MainThread] [QuizBot.py:124] [INFO    ] Collected question data: {'Type': 'multiple-choice', 'Question': 'Eddie Murphy played Sherman Klump in ...', 'Answers': ['The Nutty Professor', 'Coming to America', 'Dr Doolittle', 'Boomerang'], 'Correct': 0}
+ [2024-11-16 20:19:50,712] [MainThread] [QuizBot.py:131] [INFO    ] Image URL = https://cdn.riddle.com/embeds/v3/images/transformed/w_3709,h_2319/84e/84ea6dcbe630aebe0920532a260b8898.webp
+ [2024-11-16 20:19:51,843] [MainThread] [SeleniumHelpers.py:143] [INFO    ] Image saved to Images\Image 3.webp
+ [2024-11-16 20:19:51,944] [MainThread] [SeleniumHelpers.py:55] [INFO    ] Clicked the //button[text()="Next"] element successfully.
+ [2024-11-16 20:19:51,944] [MainThread] [QuizBot.py:105] [INFO    ] Processing question 4
+ [2024-11-16 20:19:52,761] [MainThread] [SeleniumHelpers.py:60] [WARNING ] Stale element reference encountered. Retrying...
+ [2024-11-16 20:19:53,282] [MainThread] [main.py:131] [ERROR   ] An unexpected error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6123D38A5+3004357]
+	(No symbol) [0x00007FF612069970]
+	(No symbol) [0x00007FF611F1582A]
+	(No symbol) [0x00007FF611EEFA75]
+	(No symbol) [0x00007FF611F92C77]
+	(No symbol) [0x00007FF611FAB351]
+	(No symbol) [0x00007FF611F8B983]
+	(No symbol) [0x00007FF611F57628]
+	(No symbol) [0x00007FF611F58791]
+	GetHandleVerifier [0x00007FF6123FA00D+3161901]
+	GetHandleVerifier [0x00007FF61244E060+3506048]
+	GetHandleVerifier [0x00007FF61244400D+3465005]
+	GetHandleVerifier [0x00007FF6121C0EEB+830987]
+	(No symbol) [0x00007FF61207467F]
+	(No symbol) [0x00007FF6120709D4]
+	(No symbol) [0x00007FF612070B6D]
+	(No symbol) [0x00007FF612060149]
+	BaseThreadInitThunk [0x00007FF949B2259D+29]
+	RtlUserThreadStart [0x00007FF94BDCAF38+40]
+

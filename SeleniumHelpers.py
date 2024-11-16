@@ -107,35 +107,51 @@ def save_image_from_url(url, save_dir=".", file_name=None):
         url (str): The URL of the image to download.
         save_dir (str): The directory where the image should be saved (default is the current directory).
         file_name (str): Optional. The name to save the image as. If no extension is provided, the original extension from the URL is used.
+
+    Returns:
+        str: The full path to the saved image if successful, None otherwise.
     """
+    try:
+        # Check if the URL is None or empty
+        if not url:
+            logging.warning("No valid image URL provided. Skipping image save.")
+            return None
 
-    # Check if the URL is None or empty
-    if not url:
-        logging.warning("No valid image URL provided. Skipping image save.")
-        return
+        # Ensure the save directory exists
+        if not os.path.exists(save_dir):
+            os.makedirs(save_dir, exist_ok=True)
 
-    # Extract the original file extension from the URL
-    original_extension = os.path.splitext(url)[1]
+        # Extract the original file extension from the URL
+        original_extension = os.path.splitext(url)[1]
 
-    # Use the original name if no custom file_name is provided
-    if not file_name:
-        file_name = os.path.basename(url)
-    else:
-        # Append the original extension if the file_name doesn't already have one
-        if not os.path.splitext(file_name)[1]:
-            file_name += original_extension
+        # Use the original name if no custom file_name is provided
+        if not file_name:
+            file_name = os.path.basename(url)
+        else:
+            # Append the original extension if the file_name doesn't already have one
+            if not os.path.splitext(file_name)[1]:
+                file_name += original_extension
 
-    # Construct the full path to save the image
-    save_path = os.path.join(save_dir, file_name)
+        # Construct the full path to save the image
+        save_path = os.path.join(save_dir, file_name)
 
-    # Download the image
-    response = requests.get(url)
-    if response.status_code == 200:
-        with open(save_path, 'wb') as file:
-            file.write(response.content)
-        print(f"Image saved to {save_path}")
-    else:
-        print("Failed to retrieve the image.")
+        # Download the image
+        response = requests.get(url, timeout=10)
+        if response.status_code == 200:
+            with open(save_path, 'wb') as file:
+                file.write(response.content)
+            logging.info(f"Image saved to {save_path}")
+            return save_path
+        else:
+            logging.error(f"Failed to retrieve the image. HTTP Status Code: {response.status_code}")
+            return None
+
+    except requests.exceptions.RequestException as e:
+        logging.error(f"An error occurred while downloading the image: {e}")
+        return None
+    except Exception as e:
+        logging.error(f"An unexpected error occurred: {e}")
+        return None
 
 def upload_image(driver, locator_type, locator_value, image_path):
     """Upload an image to the file input field."""

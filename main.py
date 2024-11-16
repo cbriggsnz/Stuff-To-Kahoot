@@ -12,13 +12,13 @@ def create_env_template():
     """Create a .env file template with placeholders for credentials."""
     env_path = Path(".") / ".env"
     if not env_path.exists():
-        logging.info("No .env file found. Creating a template .env file.")
+        logging.info("No .env file found. Creating a template .env file.  Please fill in your details.\n")
         with env_path.open("w") as env_file:
             env_file.write(
-                "QUIZ_USERNAME=your_quiz_username\n"
-                "QUIZ_PASSWORD=your_quiz_password\n"
-                "KAHOOT_USERNAME=your_kahoot_username\n"
-                "KAHOOT_PASSWORD=your_kahoot_password\n"
+                "QUIZ_USERNAME='your_stuff_username'\n"
+                "QUIZ_PASSWORD='your_stuff_password'\n"
+                "KAHOOT_USERNAME='your_kahoot_username'\n"
+                "KAHOOT_PASSWORD='your_kahoot_password'\n"
             )
         logging.info(f"Template .env file created at: {env_path.resolve()}")
         logging.info("Please edit the .env file to add your credentials.")
@@ -133,6 +133,7 @@ def main():
         # Ensure WebDriver cleanup
         if 'driver' in locals():
             driver.quit()
+        input("Press Enter to exit...")
 
 
 # Run the main function when executed directly
