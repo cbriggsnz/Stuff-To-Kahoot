@@ -5,68 +5,136 @@ from QuizBot import QuizBot
 from KahootBot import KahootBot
 from dotenv import load_dotenv
 import os
+from pathlib import Path
 
 
-
-set_up_logging(
-    console_log_output="stdout",
-    console_log_level="info",
-    console_log_color=True,
-    logfile_file="debug.log",
-    logfile_log_level="info",
-    logfile_log_color=False,
-    log_line_template="%(color_on)s [%(asctime)s] [%(threadName)s] [%(filename)s:%(lineno)d] [%(levelname)-8s] %(message)s%(color_off)s",
-    datefmt="%Y-%m-%d %H:%M:%S"  # Format as desired
-)
-
-# Initialize WebDriver in main.py
-options = webdriver.ChromeOptions()
-options.page_load_strategy = 'eager'
-options.add_argument("--start-maximized")
-options.add_experimental_option("detach", True)  # Keep Chrome open after script runs (optional)
-
-driver = webdriver.Chrome(options=options)
-
-# Load environment variables from .env file
-load_dotenv()
-
-# Retrieve credentials
-quiz_username = os.getenv("QUIZ_USERNAME")
-quiz_password = os.getenv("QUIZ_PASSWORD")
-kahoot_username = os.getenv("KAHOOT_USERNAME")
-kahoot_password = os.getenv("KAHOOT_PASSWORD")
-
-# QuizBot setup and scraping
-quiz_bot = QuizBot(
-    driver=driver,  # Pass the driver to QuizBot
-    quiz_type = "morning",
-    username=quiz_username,
-    password=quiz_password
-)
-
-# Run QuizBot to scrape the quiz data
-logging.info("Running Quiz Bot")
-quiz = quiz_bot.run_quiz()
-logging.info(quiz)
-#
-#
-# quiz = {'Title': 'Stuff quiz: Morning trivia challenge: November 14, 2024', 'Quiz_Data': [{'Type': 'multiple-choice', 'Question': 'Which drink is distilled from the agave plant?', 'Answers': ['Vodka', 'Tequila', 'Gin', 'White rum'], 'Correct': 1}, {'Type': 'multiple-choice', 'Question': 'What name was given to German submarines in World War II?', 'Answers': ['T-boat', 'Q-boat', 'M-boat', 'U-boat'], 'Correct': 3}, {'Type': 'multiple-choice', 'Question': 'Which African nation was once led by Idi Amin?', 'Answers': ['Zimbabwe', 'Kenya', 'Somalia', 'Uganda'], 'Correct': 3}, {'Type': 'text-entry', 'Question': 'Which name is given to the art of ornamental tree-shaping?', 'Answer': 'Topiary'}, {'Type': 'multiple-choice', 'Question': 'A simple story with a moral is known as a ...', 'Answers': ['Riddle', 'Fable', 'Folklore', 'Fan-fiction'], 'Correct': 1}, {'Type': 'multiple-choice', 'Question': 'Terry Gene Bollea is better known as ...', 'Answers': ['Hulk Hogan', 'Rey Mysterio', 'Randy Savage', 'John Cena'], 'Correct': 0}, {'Type': 'multiple-choice', 'Question': 'The female organ of a flower is the ...', 'Answers': ['Stamen', 'Pistil'], 'Correct': 1}, {'Type': 'multiple-choice', 'Question': 'The Plains of Abraham is a reserve in ...', 'Answers': ['Quito', 'Queenstown', 'Quebec', 'Qingdao'], 'Correct': 2}, {'Type': 'multiple-choice', 'Question': 'Which musical term means "very softly"?', 'Answers': ['Diminuendo', 'Allegro', 'Cadenza', 'Pianissimo'], 'Correct': 3}, {'Type': 'multiple-choice', 'Question': 'The term pulmonary relates to the ...', 'Answers': ['Throat', 'Heart', 'Lungs', 'Sinuses'], 'Correct': 2}, {'Type': 'multiple-choice', 'Question': 'Which Jewish festival falls 50 days after Passover?', 'Answers': ['Pentecost', 'Rosh Hashanah', 'Sukkot', 'Shavuot'], 'Correct': 3}, {'Type': 'multiple-choice', 'Question': 'The South American Pampas are ...', 'Answers': ['Grass plains', 'Rocky cliffs', 'Salt flats', 'Deserts'], 'Correct': 0}, {'Type': 'multiple-choice', 'Question': 'A baby turkey is called a ...', 'Answers': ['Chick', 'Turkling', 'Tucklet', 'Poult'], 'Correct': 3}, {'Type': 'multiple-choice', 'Question': 'Which of these is a ring-toss game?', 'Answers': ['Croquet', 'Lacrosse', 'Quoits', 'Bocce'], 'Correct': 2}, {'Type': 'multiple-choice', 'Question': 'Good King Wenceslas was the duke of ...', 'Answers': ['Edinburgh', 'Bohemia', 'Arabia', 'Somerset'], 'Correct': 1}]}
-
-#
-# # KahootBot setup and quiz creation
-quiz_data = quiz["Quiz_Data"]
-title = quiz["Title"]
+def create_env_template():
+    """Create a .env file template with placeholders for credentials."""
+    env_path = Path(".") / ".env"
+    if not env_path.exists():
+        logging.info("No .env file found. Creating a template .env file.")
+        with env_path.open("w") as env_file:
+            env_file.write(
+                "QUIZ_USERNAME=your_quiz_username\n"
+                "QUIZ_PASSWORD=your_quiz_password\n"
+                "KAHOOT_USERNAME=your_kahoot_username\n"
+                "KAHOOT_PASSWORD=your_kahoot_password\n"
+            )
+        logging.info(f"Template .env file created at: {env_path.resolve()}")
+        logging.info("Please edit the .env file to add your credentials.")
+        return False  # Indicates that the .env file was just created
+    return True  # Indicates that the .env file already exists
 
 
-kahoot_bot = KahootBot(
-    driver=driver,  # Pass the same driver to KahootBot
-    username=kahoot_username,
-    password=kahoot_password,
-    title=title,
-    quiz_data=quiz_data,
-    debug=True
-)
-kahoot_bot.run()
+def initialize_logging():
+    """Set up the logging configuration."""
+    set_up_logging(
+        console_log_output="stdout",
+        console_log_level="info",
+        console_log_color=True,
+        logfile_file="debug.log",
+        logfile_log_level="info",
+        logfile_log_color=False,
+        log_line_template="%(color_on)s [%(asctime)s] [%(threadName)s] [%(filename)s:%(lineno)d] [%(levelname)-8s] %(message)s%(color_off)s",
+        datefmt="%Y-%m-%d %H:%M:%S"  # Format as desired
+    )
 
-# driver.quit()
 
+def initialize_driver():
+    """Initialize the Selenium WebDriver with desired options."""
+    options = webdriver.ChromeOptions()
+    options.page_load_strategy = 'eager'
+    options.add_argument("--start-maximized")
+    options.add_experimental_option("detach", True)  # Keep Chrome open after script runs (optional)
+
+    return webdriver.Chrome(options=options)
+
+
+def load_credentials():
+    """Load credentials from environment variables and validate them."""
+    load_dotenv()
+
+    quiz_username = os.getenv("QUIZ_USERNAME")
+    quiz_password = os.getenv("QUIZ_PASSWORD")
+    kahoot_username = os.getenv("KAHOOT_USERNAME")
+    kahoot_password = os.getenv("KAHOOT_PASSWORD")
+
+    if not all([quiz_username, quiz_password, kahoot_username, kahoot_password]):
+        missing = [name for name, value in {
+            "QUIZ_USERNAME": quiz_username,
+            "QUIZ_PASSWORD": quiz_password,
+            "KAHOOT_USERNAME": kahoot_username,
+            "KAHOOT_PASSWORD": kahoot_password
+        }.items() if not value]
+        logging.error(f"Missing environment variables: {', '.join(missing)}")
+        return None
+
+    return {
+        "quiz_username": quiz_username,
+        "quiz_password": quiz_password,
+        "kahoot_username": kahoot_username,
+        "kahoot_password": kahoot_password
+    }
+
+
+def run_quiz_bot(driver, credentials):
+    """Run QuizBot to gather quiz data."""
+    quiz_bot = QuizBot(
+        driver=driver,
+        quiz_type="morning",
+        username=credentials["quiz_username"],
+        password=credentials["quiz_password"]
+    )
+
+    logging.info("Running Quiz Bot")
+    quiz = quiz_bot.run_quiz()
+    logging.info(quiz)
+    return quiz
+
+
+def run_kahoot_bot(driver, credentials, quiz):
+    """Run KahootBot to create a Kahoot quiz."""
+    kahoot_bot = KahootBot(
+        driver=driver,
+        username=credentials["kahoot_username"],
+        password=credentials["kahoot_password"],
+        title=quiz["Title"],
+        quiz_data=quiz["Quiz_Data"],
+        debug=True
+    )
+    kahoot_bot.run()
+
+
+def main():
+    try:
+        # Initialize logging
+        initialize_logging()
+
+        # Check for or create .env file
+        if not create_env_template():
+            logging.info("Edit the .env file and re-run the program.")
+            return
+
+        # Initialize WebDriver
+        driver = initialize_driver()
+
+        # Load and validate credentials
+        credentials = load_credentials()
+        if credentials is None:
+            return
+
+        # Run QuizBot and KahootBot
+        quiz = run_quiz_bot(driver, credentials)
+        run_kahoot_bot(driver, credentials, quiz)
+
+    except Exception as e:
+        logging.error(f"An unexpected error occurred: {e}")
+    finally:
+        # Ensure WebDriver cleanup
+        if 'driver' in locals():
+            driver.quit()
+
+
+# Run the main function when executed directly
+if __name__ == "__main__":
+    main()
