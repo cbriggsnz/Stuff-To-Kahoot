@@ -1,4 +1,4 @@
-# Automated Quiz Bot System
+# Automated Stuff -> Kahoot Bot System
 
 This repository provides a system to automate the collection of quiz data from a quiz platform and upload it to a Kahoot account. It uses Selenium to interact with web pages, retrieve data, and create quizzes programmatically.
 
